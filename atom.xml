@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-02T15:22:29.000Z</updated>
+  <updated>2016-11-04T15:38:05.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,21 +16,35 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>two</title>
-    <link href="http://yoursite.com/2016/11/02/two/"/>
-    <id>http://yoursite.com/2016/11/02/two/</id>
-    <published>2016-11-02T15:13:44.000Z</published>
-    <updated>2016-11-02T15:22:29.000Z</updated>
+    <title>adb常用命令</title>
+    <link href="http://yoursite.com/2016/11/04/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/2016/11/04/adb常用命令/</id>
+    <published>2016-11-04T15:34:18.000Z</published>
+    <updated>2016-11-04T15:38:05.000Z</updated>
     
-    <content type="html"><![CDATA[<p>sdfsdfdsfsd</p>
-<a id="more"></a>
-<p>zheshigengduo<br>sdkjfndfsdkfjnsd<br>tttttttttttttttttt</p>
-<p>12344555</p>
+    <content type="html"><![CDATA[<p>####关闭或者开启服务</p>
+<ul>
+<li>adb kill-server</li>
+<li>adb start-server</li>
+</ul>
+<p>####查看当前连接的设备</p>
+<ul>
+<li>adb devices</li>
+</ul>
 ]]></content>
     
     <summary type="html">
     
-      &lt;p&gt;sdfsdfdsfsd&lt;/p&gt;
+      &lt;p&gt;####关闭或者开启服务&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;adb kill-server&lt;/li&gt;
+&lt;li&gt;adb start-server&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;####查看当前连接的设备&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;adb devices&lt;/li&gt;
+&lt;/ul&gt;
+
     
     </summary>
     
