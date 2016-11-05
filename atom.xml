@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-05T07:32:19.000Z</updated>
+  <updated>2016-11-05T07:34:23.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,32 +20,27 @@
     <link href="http://yoursite.com/2016/11/04/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://yoursite.com/2016/11/04/adb常用命令/</id>
     <published>2016-11-04T15:34:18.000Z</published>
-    <updated>2016-11-05T07:32:19.000Z</updated>
+    <updated>2016-11-05T07:34:23.000Z</updated>
     
-    <content type="html"><![CDATA[<p>####关闭或者开启服务</p>
-<ul>
+    <content type="html"><![CDATA[<h4 id="关闭或者开启服务"><a href="#关闭或者开启服务" class="headerlink" title="关闭或者开启服务"></a>关闭或者开启服务</h4><ul>
 <li>adb kill-server</li>
 <li>adb start-server</li>
 </ul>
-<p>####查看当前连接的设备</p>
-<ul>
+<h4 id="查看当前连接的设备"><a href="#查看当前连接的设备" class="headerlink" title="查看当前连接的设备"></a>查看当前连接的设备</h4><ul>
 <li>adb devices</li>
 </ul>
-<p>####直接选定设备来执行命令</p>
-<ul>
+<h4 id="直接选定设备来执行命令"><a href="#直接选定设备来执行命令" class="headerlink" title="直接选定设备来执行命令"></a>直接选定设备来执行命令</h4><ul>
 <li>-d 真机</li>
 <li>-e 模拟器</li>
 <li>-s 序列号</li>
 </ul>
 <p>adb -d install hello.apk<br>adb -s emulator -5556 install hello.apk</p>
 <a id="more"></a>
-<p>####上传和下载文件</p>
-<ul>
+<h4 id="上传和下载文件"><a href="#上传和下载文件" class="headerlink" title="上传和下载文件"></a>上传和下载文件</h4><ul>
 <li>adb push &lt;本地文件&gt;&lt;远程路径&gt;   adb push hello.apk system/app</li>
 <li>adb pull &lt;远程文件&gt;&lt;本地路径&gt;   adb pull system/app/hello.apk F:\</li>
 </ul>
-<p>####常用adb shell 命令</p>
-<ul>
+<h4 id="常用adb-shell-命令"><a href="#常用adb-shell-命令" class="headerlink" title="常用adb shell 命令"></a>常用adb shell 命令</h4><ul>
 <li>getprop 显示系统属性信息</li>
 <li>setprop <key> <value> 设置系统属性信息</value></key></li>
 <li>service list 显示系统服务列表   </li>
@@ -55,8 +50,7 @@
 <li>cat</li>
 <li>kill</li>
 </ul>
-<p>####显示系统数据信息 如：</p>
-<ul>
+<h4 id="显示系统数据信息-如："><a href="#显示系统数据信息-如：" class="headerlink" title="显示系统数据信息 如："></a>显示系统数据信息 如：</h4><ul>
 <li>dumpsys wifi 显示wifi信息</li>
 <li>dumpsys cpuinfo 显示cpu信息</li>
 <li>dumpsys meminfo com.android.lanucher2 显示launcher2的内存使用情况</li>
@@ -66,17 +60,14 @@
     
     <summary type="html">
     
-      &lt;p&gt;####关闭或者开启服务&lt;/p&gt;
-&lt;ul&gt;
+      &lt;h4 id=&quot;关闭或者开启服务&quot;&gt;&lt;a href=&quot;#关闭或者开启服务&quot; class=&quot;headerlink&quot; title=&quot;关闭或者开启服务&quot;&gt;&lt;/a&gt;关闭或者开启服务&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;adb kill-server&lt;/li&gt;
 &lt;li&gt;adb start-server&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;####查看当前连接的设备&lt;/p&gt;
-&lt;ul&gt;
+&lt;h4 id=&quot;查看当前连接的设备&quot;&gt;&lt;a href=&quot;#查看当前连接的设备&quot; class=&quot;headerlink&quot; title=&quot;查看当前连接的设备&quot;&gt;&lt;/a&gt;查看当前连接的设备&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;adb devices&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;####直接选定设备来执行命令&lt;/p&gt;
-&lt;ul&gt;
+&lt;h4 id=&quot;直接选定设备来执行命令&quot;&gt;&lt;a href=&quot;#直接选定设备来执行命令&quot; class=&quot;headerlink&quot; title=&quot;直接选定设备来执行命令&quot;&gt;&lt;/a&gt;直接选定设备来执行命令&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;-d 真机&lt;/li&gt;
 &lt;li&gt;-e 模拟器&lt;/li&gt;
 &lt;li&gt;-s 序列号&lt;/li&gt;
