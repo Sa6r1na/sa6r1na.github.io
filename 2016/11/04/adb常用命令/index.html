@@ -7,4 +7,35 @@
 <ul>
 <li>adb devices</li>
 </ul>
+<p>####直接选定设备来执行命令</p>
+<ul>
+<li>-d 真机</li>
+<li>-e 模拟器</li>
+<li>-s 序列号</li>
+</ul>
+<p>adb -d install hello.apk<br>adb -s emulator -5556 install hello.apk</p>
+<a id="more"></a>
+<p>####上传和下载文件</p>
+<ul>
+<li>adb push &lt;本地文件&gt;&lt;远程路径&gt;   adb push hello.apk system/app</li>
+<li>adb pull &lt;远程文件&gt;&lt;本地路径&gt;   adb pull system/app/hello.apk F:\</li>
+</ul>
+<p>####常用adb shell 命令</p>
+<ul>
+<li>getprop 显示系统属性信息</li>
+<li>setprop <key> <value> 设置系统属性信息</value></key></li>
+<li>service list 显示系统服务列表   </li>
+<li>ps 列出系统进程</li>
+<li>ls</li>
+<li>df 检查文件系统的磁盘空间占用情况</li>
+<li>cat</li>
+<li>kill</li>
+</ul>
+<p>####显示系统数据信息 如：</p>
+<ul>
+<li>dumpsys wifi 显示wifi信息</li>
+<li>dumpsys cpuinfo 显示cpu信息</li>
+<li>dumpsys meminfo com.android.lanucher2 显示launcher2的内存使用情况</li>
+<li>adb shell dumpsys activity 显示系统Activity信息</li>
+</ul>
 </div></article></div></section><footer><div class="paginator"></div><div class="copyright"><p>© 2015 - 2016 <a href="http://yoursite.com">John Doe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>

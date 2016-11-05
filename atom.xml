@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-04T15:38:05.000Z</updated>
+  <updated>2016-11-05T07:32:19.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2016/11/04/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://yoursite.com/2016/11/04/adb常用命令/</id>
     <published>2016-11-04T15:34:18.000Z</published>
-    <updated>2016-11-04T15:38:05.000Z</updated>
+    <updated>2016-11-05T07:32:19.000Z</updated>
     
     <content type="html"><![CDATA[<p>####关闭或者开启服务</p>
 <ul>
@@ -30,6 +30,37 @@
 <p>####查看当前连接的设备</p>
 <ul>
 <li>adb devices</li>
+</ul>
+<p>####直接选定设备来执行命令</p>
+<ul>
+<li>-d 真机</li>
+<li>-e 模拟器</li>
+<li>-s 序列号</li>
+</ul>
+<p>adb -d install hello.apk<br>adb -s emulator -5556 install hello.apk</p>
+<a id="more"></a>
+<p>####上传和下载文件</p>
+<ul>
+<li>adb push &lt;本地文件&gt;&lt;远程路径&gt;   adb push hello.apk system/app</li>
+<li>adb pull &lt;远程文件&gt;&lt;本地路径&gt;   adb pull system/app/hello.apk F:\</li>
+</ul>
+<p>####常用adb shell 命令</p>
+<ul>
+<li>getprop 显示系统属性信息</li>
+<li>setprop <key> <value> 设置系统属性信息</value></key></li>
+<li>service list 显示系统服务列表   </li>
+<li>ps 列出系统进程</li>
+<li>ls</li>
+<li>df 检查文件系统的磁盘空间占用情况</li>
+<li>cat</li>
+<li>kill</li>
+</ul>
+<p>####显示系统数据信息 如：</p>
+<ul>
+<li>dumpsys wifi 显示wifi信息</li>
+<li>dumpsys cpuinfo 显示cpu信息</li>
+<li>dumpsys meminfo com.android.lanucher2 显示launcher2的内存使用情况</li>
+<li>adb shell dumpsys activity 显示系统Activity信息</li>
 </ul>
 ]]></content>
     
@@ -44,7 +75,13 @@
 &lt;ul&gt;
 &lt;li&gt;adb devices&lt;/li&gt;
 &lt;/ul&gt;
-
+&lt;p&gt;####直接选定设备来执行命令&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;-d 真机&lt;/li&gt;
+&lt;li&gt;-e 模拟器&lt;/li&gt;
+&lt;li&gt;-s 序列号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;adb -d install hello.apk&lt;br&gt;adb -s emulator -5556 install hello.apk&lt;/p&gt;
     
     </summary>
     
