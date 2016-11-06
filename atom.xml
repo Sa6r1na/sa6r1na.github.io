@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-06T14:26:45.000Z</updated>
+  <updated>2016-11-06T14:33:27.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,10 +20,10 @@
     <link href="http://yoursite.com/2016/11/06/monkey%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://yoursite.com/2016/11/06/monkey常用命令/</id>
     <published>2016-11-06T12:15:34.000Z</published>
-    <updated>2016-11-06T14:26:45.000Z</updated>
+    <updated>2016-11-06T14:33:27.000Z</updated>
     
     <content type="html"><![CDATA[<h4 id="启动的命令行脚本："><a href="#启动的命令行脚本：" class="headerlink" title="启动的命令行脚本："></a>启动的命令行脚本：</h4><p><code>monkey [option] &lt;count&gt;</code></p>
-<h3 id="options-可简单划分为五类："><a href="#options-可简单划分为五类：" class="headerlink" title="options 可简单划分为五类："></a>options 可简单划分为五类：</h3><ul>
+<h4 id="options可简单划分为五类："><a href="#options可简单划分为五类：" class="headerlink" title="options可简单划分为五类："></a>options可简单划分为五类：</h4><ul>
 <li>基本配置类参数</li>
 <li>事件类型和频率参数</li>
 <li>约束限制类参数</li>
@@ -80,7 +80,7 @@
     <summary type="html">
     
       &lt;h4 id=&quot;启动的命令行脚本：&quot;&gt;&lt;a href=&quot;#启动的命令行脚本：&quot; class=&quot;headerlink&quot; title=&quot;启动的命令行脚本：&quot;&gt;&lt;/a&gt;启动的命令行脚本：&lt;/h4&gt;&lt;p&gt;&lt;code&gt;monkey [option] &amp;lt;count&amp;gt;&lt;/code&gt;&lt;/p&gt;
-&lt;h3 id=&quot;options-可简单划分为五类：&quot;&gt;&lt;a href=&quot;#options-可简单划分为五类：&quot; class=&quot;headerlink&quot; title=&quot;options 可简单划分为五类：&quot;&gt;&lt;/a&gt;options 可简单划分为五类：&lt;/h3&gt;&lt;ul&gt;
+&lt;h4 id=&quot;options可简单划分为五类：&quot;&gt;&lt;a href=&quot;#options可简单划分为五类：&quot; class=&quot;headerlink&quot; title=&quot;options可简单划分为五类：&quot;&gt;&lt;/a&gt;options可简单划分为五类：&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;基本配置类参数&lt;/li&gt;
 &lt;li&gt;事件类型和频率参数&lt;/li&gt;
 &lt;li&gt;约束限制类参数&lt;/li&gt;
