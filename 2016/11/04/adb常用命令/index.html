@@ -1,17 +1,18 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> adb常用命令 · Hexo</title><meta name="description" content="adb常用命令 - John Doe"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="Hexo"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/sunchongsheng" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/pinggod" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">adb常用命令</h1><div class="post-info">Nov 4, 2016</div><div class="post-content"><h4 id="关闭或者开启服务"><a href="#关闭或者开启服务" class="headerlink" title="关闭或者开启服务"></a>关闭或者开启服务</h4><ul>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> adb常用命令 · Hexo</title><meta name="description" content="adb常用命令 - John Doe"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="Hexo"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/sunchongsheng" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/pinggod" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">adb常用命令</h1><div class="post-info">Nov 4, 2016</div><div class="post-content"><p>####关闭或者开启服务</p>
+<ul>
 <li>adb kill-server</li>
 <li>adb start-server</li>
 </ul>
 <h4 id="查看当前连接的设备"><a href="#查看当前连接的设备" class="headerlink" title="查看当前连接的设备"></a>查看当前连接的设备</h4><ul>
 <li>adb devices</li>
 </ul>
+<a id="more"></a>
 <h4 id="直接选定设备来执行命令"><a href="#直接选定设备来执行命令" class="headerlink" title="直接选定设备来执行命令"></a>直接选定设备来执行命令</h4><ul>
 <li>-d 真机</li>
 <li>-e 模拟器</li>
 <li>-s 序列号</li>
 </ul>
 <p>adb -d install hello.apk<br>adb -s emulator -5556 install hello.apk</p>
-<a id="more"></a>
 <h4 id="上传和下载文件"><a href="#上传和下载文件" class="headerlink" title="上传和下载文件"></a>上传和下载文件</h4><ul>
 <li>adb push &lt;本地文件&gt;&lt;远程路径&gt;   adb push hello.apk system/app</li>
 <li>adb pull &lt;远程文件&gt;&lt;本地路径&gt;   adb pull system/app/hello.apk F:\</li>
@@ -32,4 +33,4 @@
 <li>dumpsys meminfo com.android.lanucher2 显示launcher2的内存使用情况</li>
 <li>adb shell dumpsys activity 显示系统Activity信息</li>
 </ul>
-</div></article></div></section><footer><div class="paginator"></div><div class="copyright"><p>© 2015 - 2016 <a href="http://yoursite.com">John Doe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/11/06/monkey常用命令/" class="prev">上一篇</a></div><div class="copyright"><p>© 2015 - 2016 <a href="http://yoursite.com">John Doe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>

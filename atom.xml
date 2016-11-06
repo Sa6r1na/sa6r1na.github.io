@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-05T07:34:23.000Z</updated>
+  <updated>2016-11-06T14:16:05.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,26 +16,110 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>monkey常用命令</title>
+    <link href="http://yoursite.com/2016/11/06/monkey%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/2016/11/06/monkey常用命令/</id>
+    <published>2016-11-06T12:15:34.000Z</published>
+    <updated>2016-11-06T14:16:05.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>####启动的命令行脚本：</p>
+<ul>
+<li>monkey [option] <count></count></li>
+</ul>
+<p>###options 可简单划分为五类：</p>
+<ul>
+<li>基本配置类参数</li>
+<li>事件类型和频率参数</li>
+<li>约束限制类参数</li>
+<li>调试类参数</li>
+<li>官方隐藏类参数</li>
+</ul>
+<a id="more"></a>
+<p>####1.基本配置类参数</p>
+<ul>
+<li>–help 输出使用方法</li>
+<li>-v  反馈信息的级别。Level 0 提供较少信息；level 1（-v-v）较为详细；level 2（-v-v-v）例如：adb shell monkey -v-v 10</li>
+</ul>
+<p>####2.事件类型和频率参数</p>
+<ul>
+<li>-s <seed> 伪随机数生成器的种子值（种子值自己刚开始不太理解，参考了一些网上的说法应该就是你定义一个随机数列的时候需要给出的一个基准值，根据你给出的这个值生成一个随机数列。）</seed></li>
+<li>–throttle &lt;毫秒数&gt; 事件之间的固定延迟。</li>
+<li>–pct-touch &lt;百分比&gt; 调整触摸事件的百分比</li>
+<li>–pct-motion &lt;百分比&gt;  调整动作事件的百分比（屏幕上某处的一个down事件，一个伪随机事件和一个up事件组成）</li>
+<li>–pct-pinchzoom &lt;百分比&gt; 调整二指缩放事件的百分比</li>
+<li>–pct-trackball &lt;百分比&gt; 调整轨迹事件的百分比</li>
+<li>–pct-rotation &lt;百分比&gt; 调整屏幕旋转事件的百分比</li>
+<li>–pct-nav &lt;百分比&gt; 调整基本导航事件的百分比</li>
+<li>–pct-majornav &lt;百分比&gt; 调整主要导航事件的百分比（引发图形界面的动作，如5-way键盘的中间按键、回退按键、菜单按键）（5-way 键盘百度了下没有什么太多的解释，大概就是手机的侧边的按键）</li>
+<li>–pct-syskeys &lt;百分比&gt; 调整系统按键事件的百分比</li>
+<li>–pct-appswitch &lt;百分比&gt; 调整启动activity的百分比</li>
+<li><p>–pct-flip &lt;百分比&gt; 调整键盘事件的百分比</p>
+</li>
+<li><p>-p &lt;包名&gt; 指定包名</p>
+</li>
+<li>-c &lt;类别&gt; 指定类名</li>
+</ul>
+<p>####3.调试类参数</p>
+<ul>
+<li>–dbg-no-events 和-v、一个或几个包约束，保持运行monkey30秒或者更长时间的非零值联合起来。可以理解为debug</li>
+<li>–hprof 将monkey事件执行之前和之后生成的文件快照文件存放于手机的data/misc目录。文件较大，慎用</li>
+<li>–ignore-crashes 忽略奔溃继续执行</li>
+<li>–ignore-timeouts 忽略超时</li>
+<li>–ignore-security-exception 忽略程序许可错误（比如请求系统许可个什么什么权限失败了）</li>
+<li>–kill-process-after-error 通知系统有出错的进程了，让系统停止这个进程</li>
+<li>–monitor-native-crashes 监视并且报告本地代码的崩溃事件</li>
+<li>–wait-dbg 停止执行中的monkey，直到有调试器连接</li>
+</ul>
+<p>####4.官方隐藏类参数</p>
+<ul>
+<li>–pkg-blacklist-file &lt;黑名单文件&gt; 不测试处于黑名单中记录的包（包名一行一个）</li>
+<li>–pkg-whitelist-file &lt;白名单文件&gt; 只测试白名单之内的包</li>
+<li>-f &lt;脚本文件&gt; 指定用户执行用户自定义的脚本文件</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;####启动的命令行脚本：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;monkey [option] &lt;count&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;###options 可简单划分为五类：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;基本配置类参数&lt;/li&gt;
+&lt;li&gt;事件类型和频率参数&lt;/li&gt;
+&lt;li&gt;约束限制类参数&lt;/li&gt;
+&lt;li&gt;调试类参数&lt;/li&gt;
+&lt;li&gt;官方隐藏类参数&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>adb常用命令</title>
     <link href="http://yoursite.com/2016/11/04/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://yoursite.com/2016/11/04/adb常用命令/</id>
     <published>2016-11-04T15:34:18.000Z</published>
-    <updated>2016-11-05T07:34:23.000Z</updated>
+    <updated>2016-11-06T13:37:06.000Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="关闭或者开启服务"><a href="#关闭或者开启服务" class="headerlink" title="关闭或者开启服务"></a>关闭或者开启服务</h4><ul>
+    <content type="html"><![CDATA[<p>####关闭或者开启服务</p>
+<ul>
 <li>adb kill-server</li>
 <li>adb start-server</li>
 </ul>
 <h4 id="查看当前连接的设备"><a href="#查看当前连接的设备" class="headerlink" title="查看当前连接的设备"></a>查看当前连接的设备</h4><ul>
 <li>adb devices</li>
 </ul>
+<a id="more"></a>
 <h4 id="直接选定设备来执行命令"><a href="#直接选定设备来执行命令" class="headerlink" title="直接选定设备来执行命令"></a>直接选定设备来执行命令</h4><ul>
 <li>-d 真机</li>
 <li>-e 模拟器</li>
 <li>-s 序列号</li>
 </ul>
 <p>adb -d install hello.apk<br>adb -s emulator -5556 install hello.apk</p>
-<a id="more"></a>
 <h4 id="上传和下载文件"><a href="#上传和下载文件" class="headerlink" title="上传和下载文件"></a>上传和下载文件</h4><ul>
 <li>adb push &lt;本地文件&gt;&lt;远程路径&gt;   adb push hello.apk system/app</li>
 <li>adb pull &lt;远程文件&gt;&lt;本地路径&gt;   adb pull system/app/hello.apk F:\</li>
@@ -60,19 +144,14 @@
     
     <summary type="html">
     
-      &lt;h4 id=&quot;关闭或者开启服务&quot;&gt;&lt;a href=&quot;#关闭或者开启服务&quot; class=&quot;headerlink&quot; title=&quot;关闭或者开启服务&quot;&gt;&lt;/a&gt;关闭或者开启服务&lt;/h4&gt;&lt;ul&gt;
+      &lt;p&gt;####关闭或者开启服务&lt;/p&gt;
+&lt;ul&gt;
 &lt;li&gt;adb kill-server&lt;/li&gt;
 &lt;li&gt;adb start-server&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h4 id=&quot;查看当前连接的设备&quot;&gt;&lt;a href=&quot;#查看当前连接的设备&quot; class=&quot;headerlink&quot; title=&quot;查看当前连接的设备&quot;&gt;&lt;/a&gt;查看当前连接的设备&lt;/h4&gt;&lt;ul&gt;
 &lt;li&gt;adb devices&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;直接选定设备来执行命令&quot;&gt;&lt;a href=&quot;#直接选定设备来执行命令&quot; class=&quot;headerlink&quot; title=&quot;直接选定设备来执行命令&quot;&gt;&lt;/a&gt;直接选定设备来执行命令&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;-d 真机&lt;/li&gt;
-&lt;li&gt;-e 模拟器&lt;/li&gt;
-&lt;li&gt;-s 序列号&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;adb -d install hello.apk&lt;br&gt;adb -s emulator -5556 install hello.apk&lt;/p&gt;
     
     </summary>
     
