@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-06T14:33:27.000Z</updated>
+  <updated>2016-11-07T10:31:10.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,42 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>git常用命令</title>
+    <link href="http://yoursite.com/2016/11/07/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/2016/11/07/git常用命令/</id>
+    <published>2016-11-07T04:28:24.000Z</published>
+    <updated>2016-11-07T10:31:10.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="clone-克隆项目"><a href="#clone-克隆项目" class="headerlink" title="clone 克隆项目"></a>clone 克隆项目</h4><ul>
+<li><code>git clone &lt;git地址&gt; &lt;本地地址&gt;</code></li>
+</ul>
+<h4 id="git-push-和-pull"><a href="#git-push-和-pull" class="headerlink" title="git push 和 pull"></a>git push 和 pull</h4><ul>
+<li>进入工程目录下</li>
+</ul>
+<a id="more"></a>
+<p>老三步：</p>
+<ul>
+<li>git add .  (添加所有文件)</li>
+<li>git commit -m “本次提交的注释”</li>
+<li>git push</li>
+</ul>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;clone-克隆项目&quot;&gt;&lt;a href=&quot;#clone-克隆项目&quot; class=&quot;headerlink&quot; title=&quot;clone 克隆项目&quot;&gt;&lt;/a&gt;clone 克隆项目&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;git clone &amp;lt;git地址&amp;gt; &amp;lt;本地地址&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;git-push-和-pull&quot;&gt;&lt;a href=&quot;#git-push-和-pull&quot; class=&quot;headerlink&quot; title=&quot;git push 和 pull&quot;&gt;&lt;/a&gt;git push 和 pull&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;进入工程目录下&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>monkey常用命令---参数篇</title>
@@ -98,7 +134,7 @@
     <link href="http://yoursite.com/2016/11/04/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://yoursite.com/2016/11/04/adb常用命令/</id>
     <published>2016-11-04T15:34:18.000Z</published>
-    <updated>2016-11-06T14:24:16.000Z</updated>
+    <updated>2016-11-06T14:35:05.000Z</updated>
     
     <content type="html"><![CDATA[<h4 id="关闭或者开启服务"><a href="#关闭或者开启服务" class="headerlink" title="关闭或者开启服务"></a>关闭或者开启服务</h4><ul>
 <li>adb kill-server</li>
