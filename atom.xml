@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-07T10:31:10.000Z</updated>
+  <updated>2016-11-08T14:29:56.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -16,11 +16,52 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Monkey 常用adb 辅助命令</title>
+    <link href="http://yoursite.com/2016/11/08/Monkey-%E5%B8%B8%E7%94%A8adb-%E8%BE%85%E5%8A%A9%E5%91%BD%E4%BB%A4/"/>
+    <id>http://yoursite.com/2016/11/08/Monkey-常用adb-辅助命令/</id>
+    <published>2016-11-08T14:22:00.000Z</published>
+    <updated>2016-11-08T14:29:56.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="获取logcat日志信息："><a href="#获取logcat日志信息：" class="headerlink" title="获取logcat日志信息："></a>获取logcat日志信息：</h4><ul>
+<li>adb shell logcat -v time &gt; log.txt</li>
+</ul>
+<h4 id="获取内存信息"><a href="#获取内存信息" class="headerlink" title="获取内存信息"></a>获取内存信息</h4><ul>
+<li>adb shell dumpsys meminfo &lt;进程名&gt;</li>
+</ul>
+<h4 id="获取CPU消耗信息"><a href="#获取CPU消耗信息" class="headerlink" title="获取CPU消耗信息"></a>获取CPU消耗信息</h4><ul>
+<li>adb shell top -n 1 | find “进程名”</li>
+</ul>
+<h4 id="获取电量信息"><a href="#获取电量信息" class="headerlink" title="获取电量信息"></a>获取电量信息</h4><ul>
+<li>adb shell dumpsys battery</li>
+</ul>
+<h4 id="获取GPU信息"><a href="#获取GPU信息" class="headerlink" title="获取GPU信息"></a>获取GPU信息</h4><ul>
+<li>GPU信息命令：adb shell dumpsys gfxinfo &lt;进程名&gt;</li>
+</ul>
+<h4 id="获取流量信息"><a href="#获取流量信息" class="headerlink" title="获取流量信息"></a>获取流量信息</h4><ul>
+<li>adb shell cat/proc/uid_stat/&lt;被测应用的uid&gt;/tcp_rcv</li>
+</ul>
+<h4 id="获取被测应用的UID"><a href="#获取被测应用的UID" class="headerlink" title="获取被测应用的UID"></a>获取被测应用的UID</h4><ol>
+<li>查看被测应用的进程ID adb shell ps | grep &lt;被测应用的包名&gt;</li>
+<li>查看被测应用的用户ID（UID）adb shell cat /proc/$pid/status</li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;获取logcat日志信息：&quot;&gt;&lt;a href=&quot;#获取logcat日志信息：&quot; class=&quot;headerlink&quot; title=&quot;获取logcat日志信息：&quot;&gt;&lt;/a&gt;获取logcat日志信息：&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;adb shell logcat -v 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>git常用命令</title>
     <link href="http://yoursite.com/2016/11/07/git%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://yoursite.com/2016/11/07/git常用命令/</id>
     <published>2016-11-07T04:28:24.000Z</published>
-    <updated>2016-11-07T10:31:10.000Z</updated>
+    <updated>2016-11-07T10:48:50.000Z</updated>
     
     <content type="html"><![CDATA[<h4 id="clone-克隆项目"><a href="#clone-克隆项目" class="headerlink" title="clone 克隆项目"></a>clone 克隆项目</h4><ul>
 <li><code>git clone &lt;git地址&gt; &lt;本地地址&gt;</code></li>
