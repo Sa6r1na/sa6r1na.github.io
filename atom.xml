@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-08T14:46:18.000Z</updated>
+  <updated>2016-11-11T11:15:04.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,35 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>sublime 添加转换json插件</title>
+    <link href="http://yoursite.com/2016/11/11/sublime-%E6%B7%BB%E5%8A%A0%E8%BD%AC%E6%8D%A2json%E6%8F%92%E4%BB%B6/"/>
+    <id>http://yoursite.com/2016/11/11/sublime-添加转换json插件/</id>
+    <published>2016-11-11T10:28:35.000Z</published>
+    <updated>2016-11-11T11:15:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h4><ol>
+<li>Tools-&gt; install package console</li>
+<li>preference -&gt; package control</li>
+<li>安装 pretty json 插件</li>
+<li>control + alt + J  就OK啦</li>
+</ol>
+<a id="more"></a>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;步骤&quot;&gt;&lt;a href=&quot;#步骤&quot; class=&quot;headerlink&quot; title=&quot;步骤&quot;&gt;&lt;/a&gt;步骤&lt;/h4&gt;&lt;ol&gt;
+&lt;li&gt;Tools-&amp;gt; install package console&lt;/li&gt;
+&lt;li&gt;preference -&amp;gt; package control&lt;/li&gt;
+&lt;li&gt;安装 pretty json 插件&lt;/li&gt;
+&lt;li&gt;control + alt + J  就OK啦&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Monkey 常用adb 辅助命令</title>
