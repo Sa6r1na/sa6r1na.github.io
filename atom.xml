@@ -220,7 +220,7 @@
     <link href="http://yoursite.com/2016/11/04/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://yoursite.com/2016/11/04/adb常用命令/</id>
     <published>2016-11-04T15:34:18.000Z</published>
-    <updated>2016-11-06T14:35:05.000Z</updated>
+    <updated>2016-11-12T08:20:39.000Z</updated>
     
     <content type="html"><![CDATA[<h4 id="关闭或者开启服务"><a href="#关闭或者开启服务" class="headerlink" title="关闭或者开启服务"></a>关闭或者开启服务</h4><ul>
 <li>adb kill-server</li>
@@ -255,6 +255,12 @@
 <li>dumpsys cpuinfo 显示cpu信息</li>
 <li>dumpsys meminfo com.android.lanucher2 显示launcher2的内存使用情况</li>
 <li>adb shell dumpsys activity 显示系统Activity信息</li>
+</ul>
+<h4 id="adb卸载安装"><a href="#adb卸载安装" class="headerlink" title="adb卸载安装"></a>adb卸载安装</h4><ul>
+<li>安装： adb install test.apk</li>
+<li>启动： adb shell am start -n com.sample.app/.MainActivity</li>
+<li>卸载： adb uninstall test.apk</li>
+<li>覆盖安装： adb install -r test.apk</li>
 </ul>
 ]]></content>
     
