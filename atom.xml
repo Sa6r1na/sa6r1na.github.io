@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-11-11T11:15:04.000Z</updated>
+  <updated>2016-11-12T12:40:54.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -14,6 +14,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>monkey 日志分析</title>
+    <link href="http://yoursite.com/2016/11/12/monkey-%E6%97%A5%E5%BF%97%E5%88%86%E6%9E%90/"/>
+    <id>http://yoursite.com/2016/11/12/monkey-日志分析/</id>
+    <published>2016-11-12T12:36:01.000Z</published>
+    <updated>2016-11-12T12:40:54.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="Monkey日志的保存方法"><a href="#Monkey日志的保存方法" class="headerlink" title="Monkey日志的保存方法"></a>Monkey日志的保存方法</h4><p>1.保存在pc中，代码入下：</p>
+<p> <code>adb shell monkey [option] &lt;count&gt; &gt; d:\monkey.txt</code></p>
+<p>2.保存在手机中:</p>
+<a id="more"></a>
+<p><code>adb shell</code><br><code>monkey [option] &lt;count&gt; &gt; /mnt/sdcard/monkey.txt</code></p>
+<p>3.标注流和错误流分开保存，代码如下：</p>
+<p><code>Monkey [option] &lt;count&gt; 1&gt;/sdcard/monkey.txt 2&gt;/sdcard/error.txt</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;Monkey日志的保存方法&quot;&gt;&lt;a href=&quot;#Monkey日志的保存方法&quot; class=&quot;headerlink&quot; title=&quot;Monkey日志的保存方法&quot;&gt;&lt;/a&gt;Monkey日志的保存方法&lt;/h4&gt;&lt;p&gt;1.保存在pc中，代码入下：&lt;/p&gt;
+&lt;p&gt; &lt;code&gt;adb shell monkey [option] &amp;lt;count&amp;gt; &amp;gt; d:\monkey.txt&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;2.保存在手机中:&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>sublime 添加转换json插件</title>
