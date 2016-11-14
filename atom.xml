@@ -247,7 +247,7 @@
     <link href="http://yoursite.com/2016/11/04/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://yoursite.com/2016/11/04/adb常用命令/</id>
     <published>2016-11-04T15:34:18.000Z</published>
-    <updated>2016-11-12T08:20:39.000Z</updated>
+    <updated>2016-11-14T13:00:07.000Z</updated>
     
     <content type="html"><![CDATA[<h4 id="关闭或者开启服务"><a href="#关闭或者开启服务" class="headerlink" title="关闭或者开启服务"></a>关闭或者开启服务</h4><ul>
 <li>adb kill-server</li>
@@ -260,9 +260,13 @@
 <h4 id="直接选定设备来执行命令"><a href="#直接选定设备来执行命令" class="headerlink" title="直接选定设备来执行命令"></a>直接选定设备来执行命令</h4><ul>
 <li>-d 真机</li>
 <li>-e 模拟器</li>
-<li>-s 序列号</li>
+<li><p>-s 序列号</p>
+</li>
+<li><p>adb -d install hello.apk</p>
+</li>
+<li>adb -s emulator -5556 install hello.apk</li>
+<li>adb -s <udid> install XXX.apk</udid></li>
 </ul>
-<p>adb -d install hello.apk<br>adb -s emulator -5556 install hello.apk</p>
 <h4 id="上传和下载文件"><a href="#上传和下载文件" class="headerlink" title="上传和下载文件"></a>上传和下载文件</h4><ul>
 <li>adb push &lt;本地文件&gt;&lt;远程路径&gt;   adb push hello.apk system/app</li>
 <li>adb pull &lt;远程文件&gt;&lt;本地路径&gt;   adb pull system/app/hello.apk F:\</li>
