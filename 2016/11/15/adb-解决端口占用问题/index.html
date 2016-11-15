@@ -1,0 +1,89 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> adb 解决端口占用问题 · Hexo</title><meta name="description" content="adb 解决端口占用问题 - John Doe"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="Hexo"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/sunchongsheng" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/pinggod" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">adb 解决端口占用问题</h1><div class="post-info">Nov 15, 2016</div><div class="post-content"><h4 id="错误信息："><a href="#错误信息：" class="headerlink" title="错误信息："></a>错误信息：</h4><p>C:\Users\lizy&gt;adb devices</p>
+<ul>
+<li><p>adb devicesadb server is out of date.  killing…</p>
+</li>
+<li><p>ADB server didn’t ACK<em> failed to start daemon </em>error: unknown host service</p>
+</li>
+</ul>
+<a id="more"></a>
+<h4 id="原因："><a href="#原因：" class="headerlink" title="原因："></a>原因：</h4><p>adb的端口（5037）被占用了。至于这个5037端口，可以参考本博客另外 一篇文章：</p>
+<p><a href="http://blog.csdn.net/liranke/article/details/4999210" target="_blank" rel="external">http://blog.csdn.net/liranke/article/details/4999210</a><br>在这个文章里，详细说明了adb的原理及其源码分析。</p>
+<h4 id="解决方法："><a href="#解决方法：" class="headerlink" title="解决方法："></a>解决方法：</h4><ul>
+<li>在cmd窗口:<br>C:\Users\lizy&gt;adb nodaemon server<br>cannot bind ‘tcp:5037’</li>
+</ul>
+<ul>
+<li>C:\Users\lizy&gt;netstat -ano | findstr “5037”</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">结果</th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+<th style="text-align:center"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">TCP</td>
+<td style="text-align:center">127.0.0.1:5037</td>
+<td style="text-align:center">0.0.0.0:0</td>
+<td style="text-align:center">LISTENING</td>
+<td style="text-align:center">8516</td>
+</tr>
+<tr>
+<td style="text-align:center">TCP</td>
+<td style="text-align:center">127.0.0.1:5037</td>
+<td style="text-align:center">127.0.0.1:59163</td>
+<td style="text-align:center">TIME_WAIT</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">TCP</td>
+<td style="text-align:center">127.0.0.1:5037</td>
+<td style="text-align:center">127.0.0.1:59164</td>
+<td style="text-align:center">TIME_WAIT</td>
+<td style="text-align:center">0</td>
+</tr>
+<tr>
+<td style="text-align:center">TCP</td>
+<td style="text-align:center">127.0.0.1:5037</td>
+<td style="text-align:center">127.0.0.1:59167</td>
+<td style="text-align:center">TIME_WAIT</td>
+<td style="text-align:center">0</td>
+</tr>
+</tbody>
+</table>
+<p>  ……</p>
+<ul>
+<li>C:\Users\lizy&gt;tasklist | findstr “8516”</li>
+<li>sjk_daemon        8516 Console       1     3,071 K</li>
+</ul>
+<p>哦，原来是sjk_daemon进程占了adb的端口。</p>
+<p>C:\Users\lizy&gt;tasklist</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Image Name</th>
+<th style="text-align:center">PID</th>
+<th style="text-align:center">Session Name</th>
+<th style="text-align:center">Session</th>
+<th style="text-align:center">Mem Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center"></td>
+</tr>
+</tbody>
+</table>
+<p>System Idle Process       |      0 | Services      |           0 |        24 K<br>System                    |      4 | Services      |           0 |    1,128 K<br>sjk_daemon                |     963| Console       |           1 |     3,071 K<br>tasklist.exe              |    1260| Console       |           1 |     5,856 K</p>
+<p>将这个进程kill掉：<br>C:\Users\lizy&gt;taskkill /f /pid 963</p>
+<ul>
+<li>如果这个命令提示无权限，那么，可以去windows的“任务管理器”中“进程”那个窗口，找到这个进程，将它杀掉。</li>
+</ul>
+<ul>
+<li>再运行adb devices，就没有问题了。<br>C:\Users\lizy&gt;adb devices<br>4df7f482396a301d        device</li>
+</ul>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/11/12/monkey-日志分析/" class="next">NEXT</a></div><div class="copyright"><p>© 2015 - 2016 <a href="http://yoursite.com">John Doe</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script></body></html>
