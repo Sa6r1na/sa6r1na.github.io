@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sa6r1na.github.io/"/>
-  <updated>2016-11-18T03:17:08.000Z</updated>
+  <updated>2016-11-18T03:19:46.000Z</updated>
   <id>http://sa6r1na.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://sa6r1na.github.io/2016/11/15/adb-%E8%A7%A3%E5%86%B3%E7%AB%AF%E5%8F%A3%E5%8D%A0%E7%94%A8%E9%97%AE%E9%A2%98/"/>
     <id>http://sa6r1na.github.io/2016/11/15/adb-解决端口占用问题/</id>
     <published>2016-11-15T03:45:54.000Z</published>
-    <updated>2016-11-18T03:17:08.000Z</updated>
+    <updated>2016-11-18T03:19:46.000Z</updated>
     
     <content type="html"><![CDATA[<h4 id="错误信息："><a href="#错误信息：" class="headerlink" title="错误信息："></a>错误信息：</h4><p>C:\Users\lizy&gt;adb devices</p>
 <ul>
@@ -139,7 +139,8 @@
 <li>如果这个命令提示无权限，那么，可以去windows的“任务管理器”中“进程”那个窗口，找到这个进程，将它杀掉。</li>
 </ul>
 <ul>
-<li>再运行adb devices，就没有问题了。<br>C:\Users\lizy&gt;adb devices<br>4df7f482396a301d        device</li>
+<li>再运行adb devices，就没有问题了。</li>
+<li>C:\Users\lizy&gt;adb devices<br>4df7f482396a301d        device</li>
 </ul>
 ]]></content>
     
