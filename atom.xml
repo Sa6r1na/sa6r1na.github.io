@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sa6r1na.github.io/"/>
-  <updated>2016-11-26T04:09:44.000Z</updated>
+  <updated>2016-11-28T14:44:12.000Z</updated>
   <id>http://sa6r1na.github.io/</id>
   
   <author>
@@ -20,14 +20,62 @@
     <link href="http://sa6r1na.github.io/2016/11/22/python-%E8%B0%83%E7%94%A8http%E6%8E%A5%E5%8F%A3/"/>
     <id>http://sa6r1na.github.io/2016/11/22/python-调用http接口/</id>
     <published>2016-11-22T11:57:09.000Z</published>
-    <updated>2016-11-26T04:09:44.000Z</updated>
+    <updated>2016-11-28T14:44:12.000Z</updated>
     
-    <content type="html"><![CDATA[<h4 id="python调用http接口可执行例子"><a href="#python调用http接口可执行例子" class="headerlink" title="python调用http接口可执行例子"></a>python调用http接口可执行例子</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">import urllib2import jsonurl = &apos;http://********&apos;headers = &#123;&apos;Host&apos;: &apos;**********&apos;,           &apos;Content-Type&apos;: &apos;application/json&apos;,           &apos;x-appver&apos;: &apos;11.5.0.0&apos;,           &apos;x-platform&apos;: &apos;3&apos;,           &apos;x-access-token&apos;: &apos;cf9be31afddb461dbab9e74de2f2890a&apos;           &#125;</div><div class="line">           data = &#123;    &quot;recType&quot;: 1,    &quot;bizId&quot;: &quot;ca4b1bdbdcfc5e4774b919f32a0ecf33&quot;,    &quot;amount&quot;: 3, &quot;bizTime&quot;: 1479806874805,    &quot;comment&quot;: &quot;&quot;,    &quot;accountId&quot;: 1,    &quot;sourceSystem&quot;: 30000,    &quot;type&quot;: &quot;family&quot;,    &quot;clientCreateTime&quot;: 1479806877264,    &quot;clientEditTime&quot;: 1479806877264,    &quot;bkId&quot;: &quot;41218&quot;,    &quot;bookId&quot;: &quot;41218&quot;,    &quot;categoryId&quot;: 1001,    &quot;members&quot;: [&#123;        &quot;mid&quot;: 48451    &#125;]&#125;# data = urllib.urlencode(data)jdata = json.dumps(data)print jdatarequest = urllib2.Request(url, jdata, headers)# request.add_header(&apos;x-access-token&apos;,&apos;cf9be31afddb461dbab9e74de2f2890a&apos;)response = urllib2.urlopen(request)apicontent = response.read()print apicontent</div></pre></td></tr></table></figure>
-<h4 id="注意：请求头里面塞一些必要的东西就好，不必要的就不要塞了。免得报错。"><a href="#注意：请求头里面塞一些必要的东西就好，不必要的就不要塞了。免得报错。" class="headerlink" title="注意：请求头里面塞一些必要的东西就好，不必要的就不要塞了。免得报错。"></a>注意：请求头里面塞一些必要的东西就好，不必要的就不要塞了。免得报错。</h4>]]></content>
+    <content type="html"><![CDATA[<h2 id="python调用http接口可执行例子"><a href="#python调用http接口可执行例子" class="headerlink" title="python调用http接口可执行例子"></a>python调用http接口可执行例子</h2><pre><code class="python">
+<span class="keyword">import</span> urllib2
+
+<span class="keyword">import</span> json
+
+url = <span class="string">'http://********'</span>
+
+
+headers = {<span class="string">'Host'</span>: <span class="string">'**********'</span>,
+           <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span>,
+           <span class="string">'x-appver'</span>: <span class="string">'11.5.0.0'</span>,
+           <span class="string">'x-platform'</span>: <span class="string">'3'</span>,
+           <span class="string">'x-access-token'</span>: <span class="string">'cf9be31afddb461dbab9e74de2f2890a'</span>
+           }
+
+
+data = {
+    <span class="string">"recType"</span>: <span class="number">1</span>,
+    <span class="string">"bizId"</span>: <span class="string">"ca4b1bdbdcfc5e4774b919f32a0ecf33"</span>,
+    <span class="string">"amount"</span>: <span class="number">3</span>, <span class="string">"bizTime"</span>: <span class="number">1479806874805</span>,
+    <span class="string">"comment"</span>: <span class="string">""</span>,
+    <span class="string">"accountId"</span>: <span class="number">1</span>,
+    <span class="string">"sourceSystem"</span>: <span class="number">30000</span>,
+    <span class="string">"type"</span>: <span class="string">"family"</span>,
+    <span class="string">"clientCreateTime"</span>: <span class="number">1479806877264</span>,
+    <span class="string">"clientEditTime"</span>: <span class="number">1479806877264</span>,
+    <span class="string">"bkId"</span>: <span class="string">"41218"</span>,
+    <span class="string">"bookId"</span>: <span class="string">"41218"</span>,
+    <span class="string">"categoryId"</span>: <span class="number">1001</span>,
+    <span class="string">"members"</span>: [{
+        <span class="string">"mid"</span>: <span class="number">48451</span>
+    }]
+}
+
+<span class="comment"># data = urllib.urlencode(data)</span>
+jdata = json.dumps(data)
+<span class="keyword">print</span> jdata
+request = urllib2.Request(url, jdata, headers)
+<span class="comment"># request.add_header('x-access-token','cf9be31afddb461dbab9e74de2f2890a')</span>
+
+response = urllib2.urlopen(request)
+
+apicontent = response.read()
+
+<span class="keyword">print</span> apicontent
+</code></pre>
+<blockquote>
+<p>注意：请求头里面塞一些必要的东西就好，不必要的就不要塞了。免得报错。</p>
+</blockquote>
+]]></content>
     
     <summary type="html">
     
-      &lt;h4 id=&quot;python调用http接口可执行例子&quot;&gt;&lt;a href=&quot;#python调用http接口可执行例子&quot; class=&quot;headerlink&quot; title=&quot;python调用http接口可执行例子&quot;&gt;&lt;/a&gt;python调用http接口可执行例子&lt;/h4&gt;&lt;figu
+      &lt;h2 id=&quot;python调用http接口可执行例子&quot;&gt;&lt;a href=&quot;#python调用http接口可执行例子&quot; class=&quot;headerlink&quot; title=&quot;python调用http接口可执行例子&quot;&gt;&lt;/a&gt;python调用http接口可执行例子&lt;/h2&gt;&lt;pre&gt;
     
     </summary>
     

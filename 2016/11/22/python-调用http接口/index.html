@@ -1,2 +1,50 @@
-<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> python 调用http接口 · Sa6r1na's Blog</title><meta name="description" content="python 调用http接口 - Sa6r1na"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://sa6r1na.github.io/atom.xml" title="Sa6r1na's Blog"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/u/2950763237" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/Sa6r1na" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">python 调用http接口</h1><div class="post-info">Nov 22, 2016</div><div class="post-content"><h4 id="python调用http接口可执行例子"><a href="#python调用http接口可执行例子" class="headerlink" title="python调用http接口可执行例子"></a>python调用http接口可执行例子</h4><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">import urllib2import jsonurl = &apos;http://********&apos;headers = &#123;&apos;Host&apos;: &apos;**********&apos;,           &apos;Content-Type&apos;: &apos;application/json&apos;,           &apos;x-appver&apos;: &apos;11.5.0.0&apos;,           &apos;x-platform&apos;: &apos;3&apos;,           &apos;x-access-token&apos;: &apos;cf9be31afddb461dbab9e74de2f2890a&apos;           &#125;</div><div class="line">           data = &#123;    &quot;recType&quot;: 1,    &quot;bizId&quot;: &quot;ca4b1bdbdcfc5e4774b919f32a0ecf33&quot;,    &quot;amount&quot;: 3, &quot;bizTime&quot;: 1479806874805,    &quot;comment&quot;: &quot;&quot;,    &quot;accountId&quot;: 1,    &quot;sourceSystem&quot;: 30000,    &quot;type&quot;: &quot;family&quot;,    &quot;clientCreateTime&quot;: 1479806877264,    &quot;clientEditTime&quot;: 1479806877264,    &quot;bkId&quot;: &quot;41218&quot;,    &quot;bookId&quot;: &quot;41218&quot;,    &quot;categoryId&quot;: 1001,    &quot;members&quot;: [&#123;        &quot;mid&quot;: 48451    &#125;]&#125;# data = urllib.urlencode(data)jdata = json.dumps(data)print jdatarequest = urllib2.Request(url, jdata, headers)# request.add_header(&apos;x-access-token&apos;,&apos;cf9be31afddb461dbab9e74de2f2890a&apos;)response = urllib2.urlopen(request)apicontent = response.read()print apicontent</div></pre></td></tr></table></figure>
-<h4 id="注意：请求头里面塞一些必要的东西就好，不必要的就不要塞了。免得报错。"><a href="#注意：请求头里面塞一些必要的东西就好，不必要的就不要塞了。免得报错。" class="headerlink" title="注意：请求头里面塞一些必要的东西就好，不必要的就不要塞了。免得报错。"></a>注意：请求头里面塞一些必要的东西就好，不必要的就不要塞了。免得报错。</h4></div></article></div></section><footer><div class="paginator"><a href="/2016/11/15/adb-解决端口占用问题/" class="next">NEXT</a></div><div class="copyright"><p>© 2016 <a href="http://sa6r1na.github.io">Sa6r1na</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-87493635-1",'auto');ga('send','pageview');</script></body></html>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> python 调用http接口 · Sa6r1na's Blog</title><meta name="description" content="python 调用http接口 - Sa6r1na"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://sa6r1na.github.io/atom.xml" title="Sa6r1na's Blog"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/u/2950763237" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/Sa6r1na" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">python 调用http接口</h1><div class="post-info">Nov 22, 2016</div><div class="post-content"><h2 id="python调用http接口可执行例子"><a href="#python调用http接口可执行例子" class="headerlink" title="python调用http接口可执行例子"></a>python调用http接口可执行例子</h2><pre><code class="python">
+<span class="keyword">import</span> urllib2
+
+<span class="keyword">import</span> json
+
+url = <span class="string">'http://********'</span>
+
+
+headers = {<span class="string">'Host'</span>: <span class="string">'**********'</span>,
+           <span class="string">'Content-Type'</span>: <span class="string">'application/json'</span>,
+           <span class="string">'x-appver'</span>: <span class="string">'11.5.0.0'</span>,
+           <span class="string">'x-platform'</span>: <span class="string">'3'</span>,
+           <span class="string">'x-access-token'</span>: <span class="string">'cf9be31afddb461dbab9e74de2f2890a'</span>
+           }
+
+
+data = {
+    <span class="string">"recType"</span>: <span class="number">1</span>,
+    <span class="string">"bizId"</span>: <span class="string">"ca4b1bdbdcfc5e4774b919f32a0ecf33"</span>,
+    <span class="string">"amount"</span>: <span class="number">3</span>, <span class="string">"bizTime"</span>: <span class="number">1479806874805</span>,
+    <span class="string">"comment"</span>: <span class="string">""</span>,
+    <span class="string">"accountId"</span>: <span class="number">1</span>,
+    <span class="string">"sourceSystem"</span>: <span class="number">30000</span>,
+    <span class="string">"type"</span>: <span class="string">"family"</span>,
+    <span class="string">"clientCreateTime"</span>: <span class="number">1479806877264</span>,
+    <span class="string">"clientEditTime"</span>: <span class="number">1479806877264</span>,
+    <span class="string">"bkId"</span>: <span class="string">"41218"</span>,
+    <span class="string">"bookId"</span>: <span class="string">"41218"</span>,
+    <span class="string">"categoryId"</span>: <span class="number">1001</span>,
+    <span class="string">"members"</span>: [{
+        <span class="string">"mid"</span>: <span class="number">48451</span>
+    }]
+}
+
+<span class="comment"># data = urllib.urlencode(data)</span>
+jdata = json.dumps(data)
+<span class="keyword">print</span> jdata
+request = urllib2.Request(url, jdata, headers)
+<span class="comment"># request.add_header('x-access-token','cf9be31afddb461dbab9e74de2f2890a')</span>
+
+response = urllib2.urlopen(request)
+
+apicontent = response.read()
+
+<span class="keyword">print</span> apicontent
+</code></pre>
+<blockquote>
+<p>注意：请求头里面塞一些必要的东西就好，不必要的就不要塞了。免得报错。</p>
+</blockquote>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/11/15/adb-解决端口占用问题/" class="next">下一篇</a></div><div class="copyright"><p>© 2016 <a href="http://sa6r1na.github.io">Sa6r1na</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-87493635-1",'auto');ga('send','pageview');</script></body></html>
