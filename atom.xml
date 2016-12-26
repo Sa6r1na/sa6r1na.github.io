@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sa6r1na.github.io/"/>
-  <updated>2016-12-03T13:07:54.000Z</updated>
+  <updated>2016-12-26T02:41:33.000Z</updated>
   <id>http://sa6r1na.github.io/</id>
   
   <author>
@@ -16,11 +16,32 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>xcode 简单用法</title>
+    <link href="http://sa6r1na.github.io/2016/12/26/xcode-%E7%AE%80%E5%8D%95%E7%94%A8%E6%B3%95/"/>
+    <id>http://sa6r1na.github.io/2016/12/26/xcode-简单用法/</id>
+    <published>2016-12-26T02:38:22.000Z</published>
+    <updated>2016-12-26T02:41:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="安装两个xcode-选中某个xcode"><a href="#安装两个xcode-选中某个xcode" class="headerlink" title="安装两个xcode 选中某个xcode"></a>安装两个xcode 选中某个xcode</h4><p><code>sudo xcode-select -s /Applications/Xcode7.app</code></p>
+<h4 id="查看xcode版本"><a href="#查看xcode版本" class="headerlink" title="查看xcode版本"></a>查看xcode版本</h4><p><code>xcodebuild -version</code></p>
+<h4 id="列出当前所有模拟器"><a href="#列出当前所有模拟器" class="headerlink" title="列出当前所有模拟器"></a>列出当前所有模拟器</h4><p><code>xcrun simctl list</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;安装两个xcode-选中某个xcode&quot;&gt;&lt;a href=&quot;#安装两个xcode-选中某个xcode&quot; class=&quot;headerlink&quot; title=&quot;安装两个xcode 选中某个xcode&quot;&gt;&lt;/a&gt;安装两个xcode 选中某个xcode&lt;/h4&gt;&lt;p&gt;&lt;c
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>appium ios 真机测试</title>
     <link href="http://sa6r1na.github.io/2016/12/03/appium-ios-%E7%9C%9F%E6%9C%BA%E6%B5%8B%E8%AF%95/"/>
     <id>http://sa6r1na.github.io/2016/12/03/appium-ios-真机测试/</id>
     <published>2016-12-03T12:58:14.000Z</published>
-    <updated>2016-12-03T13:07:54.000Z</updated>
+    <updated>2016-12-03T14:04:24.000Z</updated>
     
     <content type="html"><![CDATA[<h4 id="appium执行iOS真机测试的条件"><a href="#appium执行iOS真机测试的条件" class="headerlink" title="appium执行iOS真机测试的条件"></a>appium执行iOS真机测试的条件</h4><ol>
 <li>一个苹果开发者ID和有效的开发者对应的配置文件及签名文件；</li>
