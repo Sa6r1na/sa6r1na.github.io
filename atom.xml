@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sa6r1na.github.io/"/>
-  <updated>2016-12-26T10:52:29.000Z</updated>
+  <updated>2017-01-02T15:26:14.000Z</updated>
   <id>http://sa6r1na.github.io/</id>
   
   <author>
@@ -14,6 +14,49 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>AndroidTool -- 很方便的Android截图、装包软件</title>
+    <link href="http://sa6r1na.github.io/2017/01/02/android-tools-%E5%BE%88%E6%96%B9%E4%BE%BF%E7%9A%84Android%E6%88%AA%E5%9B%BE%E3%80%81%E8%A3%85%E5%8C%85%E8%BD%AF%E4%BB%B6/"/>
+    <id>http://sa6r1na.github.io/2017/01/02/android-tools-很方便的Android截图、装包软件/</id>
+    <published>2017-01-02T14:51:04.000Z</published>
+    <updated>2017-01-02T15:26:14.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>很方便一款Android软件</p>
+<hr>
+<h3 id="feature："><a href="#feature：" class="headerlink" title="feature："></a>feature：</h3><ul>
+<li>方便截图</li>
+<li>录短视频</li>
+<li>快速安装软件</li>
+</ul>
+<p>点击<a href="https://github.com/mortenjust/androidtool-mac" target="_blank" rel="external">这里</a>下载</p>
+<hr>
+<a id="more"></a>
+<h3 id="截图"><a href="#截图" class="headerlink" title="截图"></a>截图</h3><p><img src="https://ww1.sinaimg.cn/large/006tNbRwgw1fbcp17zlftg30pl0hrdmp.gif" alt=""></p>
+<hr>
+<h3 id="视频录制"><a href="#视频录制" class="headerlink" title="视频录制"></a>视频录制</h3><p><img src="https://ww4.sinaimg.cn/large/006tNbRwgw1fbcp17ewcqg30pl0hr4qp.gif" alt=""></p>
+<hr>
+<h3 id="应用安装"><a href="#应用安装" class="headerlink" title="应用安装"></a>应用安装</h3><p><img src="https://ww1.sinaimg.cn/large/006tNbRwgw1fbcp9agdh9g30pl0hr7wh.gif" alt=""></p>
+<hr>
+<p>done. </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;很方便一款Android软件&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;feature：&quot;&gt;&lt;a href=&quot;#feature：&quot; class=&quot;headerlink&quot; title=&quot;feature：&quot;&gt;&lt;/a&gt;feature：&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;方便截图&lt;/li&gt;
+&lt;li&gt;录短视频&lt;/li&gt;
+&lt;li&gt;快速安装软件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;点击&lt;a href=&quot;https://github.com/mortenjust/androidtool-mac&quot;&gt;这里&lt;/a&gt;下载&lt;/p&gt;
+&lt;hr&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>xcode 简单用法</title>
