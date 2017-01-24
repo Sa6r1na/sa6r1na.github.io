@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sa6r1na.github.io/"/>
-  <updated>2017-01-24T11:40:30.000Z</updated>
+  <updated>2017-01-24T11:41:58.000Z</updated>
   <id>http://sa6r1na.github.io/</id>
   
   <author>
@@ -16,11 +16,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>uiAutomator 入门简介</title>
+    <title>uiAutomator</title>
     <link href="http://sa6r1na.github.io/2017/01/24/uiAutomator-%E5%85%A5%E9%97%A8%E7%AE%80%E4%BB%8B/"/>
     <id>http://sa6r1na.github.io/2017/01/24/uiAutomator-入门简介/</id>
     <published>2017-01-24T10:42:27.000Z</published>
-    <updated>2017-01-24T11:40:30.000Z</updated>
+    <updated>2017-01-24T11:41:58.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="小感想"><a href="#小感想" class="headerlink" title="小感想"></a>小感想</h3><ul>
 <li>嗨呀，咋说呢。想学点UI自动化测试的脚本，试着琢磨琢磨了UIAutomator。一些积累的小经验在这里做个总结。网上相关的一些小资料都比较过时了，还不清楚这个uiautomator的流行程度，先说这些。</li>
