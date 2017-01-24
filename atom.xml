@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sa6r1na.github.io/"/>
-  <updated>2017-01-24T11:35:17.000Z</updated>
+  <updated>2017-01-24T11:38:38.000Z</updated>
   <id>http://sa6r1na.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://sa6r1na.github.io/2017/01/24/uiAutomator-%E5%85%A5%E9%97%A8%E7%AE%80%E4%BB%8B/"/>
     <id>http://sa6r1na.github.io/2017/01/24/uiAutomator-入门简介/</id>
     <published>2017-01-24T10:42:27.000Z</published>
-    <updated>2017-01-24T11:35:17.000Z</updated>
+    <updated>2017-01-24T11:38:38.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="小感想"><a href="#小感想" class="headerlink" title="小感想"></a>小感想</h3><ul>
 <li>嗨呀，咋说呢。想学点UI自动化测试的脚本，试着琢磨琢磨了UIAutomator。一些积累的小经验在这里做个总结。网上相关的一些小资料都比较过时了，还不清楚这个uiautomator的流行程度，先说这些。</li>
@@ -43,7 +43,7 @@
 <li>在测试工程src目录下新建package，命名随意。然后代码写上<br><img src="https://ww3.sinaimg.cn/large/006y8lVajw1fc1xkrue3xj31kw0usamt.jpg" alt=""></li>
 </ul>
 <h3 id="3-查看Android版本sdk的ID值"><a href="#3-查看Android版本sdk的ID值" class="headerlink" title="3.查看Android版本sdk的ID值"></a>3.查看Android版本sdk的ID值</h3><ul>
-<li>在\Android-sdk\tools\目录下，输入android list.找到项目配置的android api 例如：我的api是25 id是3.</li>
+<li>在\Android-sdk\tools\目录下，输入android list.找到项目配置的android api 例如：我的api是25 id是3.<br><img src="https://ww3.sinaimg.cn/large/006tNbRwjw1fc1ybz3q0mj31ea0x67hg.jpg" alt=""></li>
 </ul>
 <h3 id="4-仍然当前目录（Android-sdk-tools-）运行命令-android-create-uitest-project-n-name-t-android-sdk-ID-p-project-path"><a href="#4-仍然当前目录（Android-sdk-tools-）运行命令-android-create-uitest-project-n-name-t-android-sdk-ID-p-project-path" class="headerlink" title="4.仍然当前目录（Android-sdk\tools\）运行命令 android create uitest-project -n name -t android-sdk-ID -p project_path"></a>4.仍然当前目录（Android-sdk\tools\）运行命令 android create uitest-project -n name -t android-sdk-ID -p project_path</h3><p>例如： <code>android create uitest-project -n myUIautomator -t 3 -p /Users/sabrina/Documents/repository/myUIautomator</code></p>
 <p>name 是生成jar包的名字可以自己定义；-t android-sdk的id刚才通过命令android list 查看到的；-p后面加路径，项目的路径。运行命令后，将会在工程的根目录下生成build.xml文件。</p>
