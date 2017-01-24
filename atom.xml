@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sa6r1na.github.io/"/>
-  <updated>2017-01-24T11:38:38.000Z</updated>
+  <updated>2017-01-24T11:40:30.000Z</updated>
   <id>http://sa6r1na.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://sa6r1na.github.io/2017/01/24/uiAutomator-%E5%85%A5%E9%97%A8%E7%AE%80%E4%BB%8B/"/>
     <id>http://sa6r1na.github.io/2017/01/24/uiAutomator-入门简介/</id>
     <published>2017-01-24T10:42:27.000Z</published>
-    <updated>2017-01-24T11:38:38.000Z</updated>
+    <updated>2017-01-24T11:40:30.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="小感想"><a href="#小感想" class="headerlink" title="小感想"></a>小感想</h3><ul>
 <li>嗨呀，咋说呢。想学点UI自动化测试的脚本，试着琢磨琢磨了UIAutomator。一些积累的小经验在这里做个总结。网上相关的一些小资料都比较过时了，还不清楚这个uiautomator的流行程度，先说这些。</li>
@@ -59,7 +59,7 @@
 <li><code>adb push &lt;jar文件路径&gt; data/local/tmp</code></li>
 <li><code>adb shell uiautomator runtest &lt;jar文件名&gt; -c &lt;工程中的类名（包含包名）&gt;</code></li>
 </ul>
-<p>例：<code>adb shell myUIautomator runtest check.jar -c com.sabrina.CheckSize</code><br>手机便会执行脚本了，由于放假在家没有Android机，所以条件够了再检验。</p>
+<p>例：<code>adb shell myUIautomator runtest myUIautomator.jar -c com.sabrina.CheckSize</code><br>手机便会执行脚本了，由于放假在家没有Android机，所以条件够了再检验。</p>
 ]]></content>
     
     <summary type="html">
