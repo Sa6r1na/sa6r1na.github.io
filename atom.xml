@@ -138,7 +138,7 @@
     <link href="http://sa6r1na.github.io/2017/01/24/uiAutomator/"/>
     <id>http://sa6r1na.github.io/2017/01/24/uiAutomator/</id>
     <published>2017-01-24T10:42:27.000Z</published>
-    <updated>2017-01-24T11:43:10.000Z</updated>
+    <updated>2017-01-26T13:19:54.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="小感想"><a href="#小感想" class="headerlink" title="小感想"></a>小感想</h3><ul>
 <li>嗨呀，咋说呢。想学点UI自动化测试的脚本，试着琢磨琢磨了UIAutomator。一些积累的小经验在这里做个总结。网上相关的一些小资料都比较过时了，还不清楚这个uiautomator的流行程度，先说这些。</li>
@@ -163,7 +163,7 @@
 <h3 id="3-查看Android版本sdk的ID值"><a href="#3-查看Android版本sdk的ID值" class="headerlink" title="3.查看Android版本sdk的ID值"></a>3.查看Android版本sdk的ID值</h3><ul>
 <li>在\Android-sdk\tools\目录下，输入android list.找到项目配置的android api 例如：我的api是25 id是3.<br><img src="https://ww3.sinaimg.cn/large/006tNbRwjw1fc1ybz3q0mj31ea0x67hg.jpg" alt=""></li>
 </ul>
-<h3 id="4-仍然当前目录（Android-sdk-tools-）运行命令-android-create-uitest-project-n-name-t-android-sdk-ID-p-project-path"><a href="#4-仍然当前目录（Android-sdk-tools-）运行命令-android-create-uitest-project-n-name-t-android-sdk-ID-p-project-path" class="headerlink" title="4.仍然当前目录（Android-sdk\tools\）运行命令 android create uitest-project -n name -t android-sdk-ID -p project_path"></a>4.仍然当前目录（Android-sdk\tools\）运行命令 android create uitest-project -n name -t android-sdk-ID -p project_path</h3><p>例如： <code>android create uitest-project -n myUIautomator -t 3 -p /Users/sabrina/Documents/repository/myUIautomator</code></p>
+<h3 id="4-生成build-xml文件"><a href="#4-生成build-xml文件" class="headerlink" title="4.生成build.xml文件"></a>4.生成build.xml文件</h3><p>仍然当前目录（Android-sdk\tools\）运行命令 android create uitest-project -n name -t android-sdk-ID -p project_path<br>例如： <code>android create uitest-project -n myUIautomator -t 3 -p /Users/sabrina/Documents/repository/myUIautomator</code></p>
 <p>name 是生成jar包的名字可以自己定义；-t android-sdk的id刚才通过命令android list 查看到的；-p后面加路径，项目的路径。运行命令后，将会在工程的根目录下生成build.xml文件。</p>
 <h3 id="5-ant配置build-xml文件"><a href="#5-ant配置build-xml文件" class="headerlink" title="5.ant配置build.xml文件"></a>5.ant配置build.xml文件</h3><ul>
 <li>刚开始被这个坑了好久，xml文件里面ant.properties位置是红色的，确一直没有找到原因，猜测一定是ant没有配置什么。百度了下idea配置ant。如下图，点击ant build.把刚才的build.xml文件添加上去。点击运行能成功运行证明添加没有什么问题。</li>
