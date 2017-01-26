@@ -1,0 +1,79 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Android性能测试 · Sa6r1na's Blog</title><meta name="description" content="Android性能测试 - Sa6r1na"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://sa6r1na.github.io/atom.xml" title="Sa6r1na's Blog"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/u/2950763237" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/Sa6r1na" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Android性能测试</h1><div class="post-info">Jan 26, 2017</div><div class="post-content"><h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><ul>
+<li>性能测试：客户端的性能测试包括启动时间、内存、CPU、GPU、功耗、流量等。</li>
+</ul>
+<p>启动时间：</p>
+<ol>
+<li>首次启动–应用首次启动花费的时间</li>
+<li>非首次启动–应用非首次启动所花费的时间</li>
+<li>应用界面切换–使用Android提供的DisplayManager来获取activity启动的时间。</li>
+</ol>
+<ul>
+<li>USS（Unique Set Size）:只属于本进程正在使用的物理内存大小</li>
+<li>PSS (Proportional Set Size):实际使用的物理内存，按照比例将共享内存分割，某一Process对共享内存的占用情况</li>
+<li>VSS （Virtual Set Size）虚拟消耗内存，包含共享库占用的内存</li>
+<li>RSS（Resident Set Size）实际使用物理内存，包含共享库占用的内存</li>
+</ul>
+<a id="more"></a>
+<h4 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h4><ol>
+<li>通过过滤关键字displayed来过滤所有activity打印的，记录日志：<br><code>adb logcat &gt; /address/logcat.txt</code><br><code>find &quot;Displayed&quot; /address/logcat.txt &gt;/newaddress/f1.txt</code></li>
+</ol>
+<h4 id="关于Android内存测试的方法基本分为几类"><a href="#关于Android内存测试的方法基本分为几类" class="headerlink" title="关于Android内存测试的方法基本分为几类"></a>关于Android内存测试的方法基本分为几类</h4><ol>
+<li>使用android本身提供的ActivityManager.MemoryInfo()方法获取。三方工具有网易的Emmagee、安测试、腾讯的GT等。</li>
+<li><p>使用android提供的 <br\><code>adb shell dumpsys meminfo | grep packagename &gt;/address/mem.txt</code><br>例子：<br><img src="https://ww4.sinaimg.cn/large/006tNbRwly1fc3ykl781xj30yy0z60u6.jpg" alt=""><br>native和dalvik，dalvik就是我们平常说的Java堆，我们创建的对象是在这里面分配的，而bitmap是直接在native上分配的，对于内存的限制是 native+dalvik 不能超过最大限制.<br>其中size是需要的内存，而allocated是分配了的内存，对应的2列分别是native和dalvik，当总数也就是total这一列超过单个程序内存的最大限制时，OOM就很有可能会出现了。</br\></p>
+</li>
+<li><p>android提供的procrank :</p>
+<ul>
+<li><p>去google获取procrank、procmem、libpagemap.so 三个文件,然后push文件<br><code>adb push procrank /system/xbin</code><br><code>adb push procmem /system/xbin</code><br><code>adb push libpagemap.so /system/lib</code></p>
+</li>
+<li><p>赋权<br><code>adb shell chmod 6755 /system/xbin/procrank</code><br><code>adb shell chmod 6755 /system/xbin/procmem</code><br><code>adb shell chmod 6755 /system/lib/libpagemap.so</code></p>
+</li>
+<li><p>执行命令<br><code>adb shell procrank | grep packagename &gt; /address/procrank.txt</code></p>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="CPU消耗"><a href="#CPU消耗" class="headerlink" title="CPU消耗"></a>CPU消耗</h4><ol>
+<li><p>android提供的<br><code>adbshell dumpsys cpuinfo |grep packagename &gt;/address/cpu.txt</code></p>
+</li>
+<li><p>top命令<br><code>adbshell top |grep packagename&gt;/address/cpu.txt</code></p>
+</li>
+</ol>
+<h4 id="功耗"><a href="#功耗" class="headerlink" title="功耗"></a>功耗</h4><ul>
+<li>一般分为两类：软件测试和硬件测试。</li>
+</ul>
+<p>功耗相关的软件测试分为三类：</p>
+<ol>
+<li>基于Android的PowerManager.WakeLock来进行；</li>
+<li>功耗的计算=CPU消耗+WakeLock消耗+数据传输+GPS消耗+WiFi连接消耗；</li>
+<li>通过adb shell dumpsys battery 来获取</li>
+</ol>
+<p>硬件：<br>一般通过万用表或者功耗仪进行测试。</p>
+<h4 id="流量"><a href="#流量" class="headerlink" title="流量"></a>流量</h4><ul>
+<li>中等负荷：应用正常操作</li>
+<li>高负荷：应用极限操作</li>
+</ul>
+<p>主要测试以下几个方面：</p>
+<ol>
+<li>应用首次启动流量提示</li>
+<li>应用后台连续运行2小时的流量值</li>
+<li>应用高负荷运行的流量峰值</li>
+<li>应用中等负荷运行的流量均值</li>
+</ol>
+<p>测试方法：</p>
+<ol>
+<li>采用第三方工具，如：流量宝</li>
+<li><p>通过tcodump抓包，通过抓包工具读取包信息来获取流量</p>
+<ul>
+<li><code>adb shell dumpsys package</code>获取uid信息</li>
+<li><code>adb shell cat /proc/uid_stat/uid/tcp_rcv</code> 获取接收的流量</li>
+<li><code>adb shell cat /proc/uid_stat/uid/tcp_snd</code> 获取发送的流量</li>
+</ul>
+<p>通过相减得到整体流量消耗</p>
+</li>
+</ol>
+<h4 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h4><ul>
+<li><a href="http://blog.csdn.net/mdx20072419/article/details/46638275" target="_blank" rel="external">http://blog.csdn.net/mdx20072419/article/details/46638275</a> </li>
+<li><a href="http://www.dzwanli.com.cn/?p=1464" target="_blank" rel="external">http://www.dzwanli.com.cn/?p=1464</a></li>
+</ul>
+<p>相关资料参考这两篇博客</p>
+</div></article></div></section><footer><div class="paginator"><a href="/2017/01/24/uiAutomator/" class="next">NEXT</a></div><div class="copyright"><p>© 2016 - 2017 <a href="http://sa6r1na.github.io">Sa6r1na</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-87493635-1",'auto');ga('send','pageview');</script></body></html>
