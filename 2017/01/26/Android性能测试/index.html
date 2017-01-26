@@ -32,6 +32,14 @@
 </ul>
 </li>
 </ol>
+<h4 id="内存分析"><a href="#内存分析" class="headerlink" title="内存分析"></a>内存分析</h4><ol>
+<li><p>利用android studio查看内存趋势图<br><img src="https://ww4.sinaimg.cn/large/006tNbRwjw1fc45ebmrlnj31kw0s8dmb.jpg" alt=""></p>
+</li>
+<li><p>dump java heap<br><br>点击图中的dump java heap 生成一个hprof文件。展示方式有class list view 和 package tree view。点击左面的class右面会展开instance变量。<br><img src="https://ww1.sinaimg.cn/large/006tNbRwjw1fc45ouuwr0j31du0nan1q.jpg" alt=""><br><img src="https://ww1.sinaimg.cn/large/006tNbRwly1fc45qdevpfj31kw0ytn15.jpg" alt=""></p>
+</li>
+<li><p>内存分配追踪allocation tracking<br><br>点击图中allocation tracking可以选择追踪方式：group by method 和 group by allocation。<br><img src="https://ww1.sinaimg.cn/large/006tNbRwly1fc45zy7rm7j31kw0ytjts.jpg" alt=""><br><img src="https://ww4.sinaimg.cn/large/006tNbRwly1fc460mkszwj31kw0yt436.jpg" alt=""></p>
+</li>
+</ol>
 <h4 id="CPU消耗"><a href="#CPU消耗" class="headerlink" title="CPU消耗"></a>CPU消耗</h4><ol>
 <li><p>android提供的<br><code>adbshell dumpsys cpuinfo |grep packagename &gt;/address/cpu.txt</code></p>
 </li>
