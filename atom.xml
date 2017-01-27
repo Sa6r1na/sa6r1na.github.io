@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sa6r1na.github.io/"/>
-  <updated>2017-01-26T13:17:50.000Z</updated>
+  <updated>2017-01-27T05:56:41.000Z</updated>
   <id>http://sa6r1na.github.io/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://sa6r1na.github.io/2017/01/26/Android%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/"/>
     <id>http://sa6r1na.github.io/2017/01/26/Android性能测试/</id>
     <published>2017-01-26T03:40:45.000Z</published>
-    <updated>2017-01-26T13:17:50.000Z</updated>
+    <updated>2017-01-27T05:56:41.000Z</updated>
     
     <content type="html"><![CDATA[<h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><ul>
 <li>性能测试：客户端的性能测试包括启动时间、内存、CPU、GPU、功耗、流量等。</li>
@@ -47,7 +47,7 @@
 </li>
 <li><p>android提供的procrank :</p>
 <ul>
-<li><p>去google获取procrank、procmem、libpagemap.so 三个文件,然后push文件<br><code>adb push procrank /system/xbin</code><br><code>adb push procmem /system/xbin</code><br><code>adb push libpagemap.so /system/lib</code></p>
+<li><p>获取procrank、procmem、libpagemap.so 三个文件，<a href="https://share.weiyun.com/6be6ab1349a9e4a1ccb08c7cc59dccf9" target="_blank" rel="external">点击下载</a>,然后push文件<br><code>adb push procrank /system/xbin</code><br><code>adb push procmem /system/xbin</code><br><code>adb push libpagemap.so /system/lib</code></p>
 </li>
 <li><p>赋权<br><code>adb shell chmod 6755 /system/xbin/procrank</code><br><code>adb shell chmod 6755 /system/xbin/procmem</code><br><code>adb shell chmod 6755 /system/lib/libpagemap.so</code></p>
 </li>
@@ -138,7 +138,7 @@
     <link href="http://sa6r1na.github.io/2017/01/24/uiAutomator/"/>
     <id>http://sa6r1na.github.io/2017/01/24/uiAutomator/</id>
     <published>2017-01-24T10:42:27.000Z</published>
-    <updated>2017-01-26T13:19:54.000Z</updated>
+    <updated>2017-01-26T13:24:28.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="小感想"><a href="#小感想" class="headerlink" title="小感想"></a>小感想</h3><ul>
 <li>嗨呀，咋说呢。想学点UI自动化测试的脚本，试着琢磨琢磨了UIAutomator。一些积累的小经验在这里做个总结。网上相关的一些小资料都比较过时了，还不清楚这个uiautomator的流行程度，先说这些。</li>
