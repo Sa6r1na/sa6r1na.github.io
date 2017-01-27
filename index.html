@@ -6,13 +6,7 @@
 <li>首次启动–应用首次启动花费的时间</li>
 <li>非首次启动–应用非首次启动所花费的时间</li>
 <li>应用界面切换–使用Android提供的DisplayManager来获取activity启动的时间。</li>
-</ol>
-<ul>
-<li>USS（Unique Set Size）:只属于本进程正在使用的物理内存大小，是单个进程的全部私有内存大小，亦即全部被该进程独占的内存大小。它揭示了运行一个特定进程的真实的内存增量大小，如果进程被终止，USS就是实际被返还给系统的内存大小。USS 是针对某个进程开始有可疑内存泄露的情况，进行检测的最佳数字。</li>
-<li>PSS (Proportional Set Size):实际使用的物理内存，按照比例将共享内存分割，某一Process对共享内存的占用情况。不同于RSS的是，PSS按比例包含了其所使用的共享库大小；例如，三个进程使用同一个占用30内存页的共享库。对于三个进程中的任何一个，PSS将只包括其中的10个内存页。PSS是一个非常有用的数字，因为系统中全部进程以整体的方式被统计，对于系统中的整体内存使用是一个很好的描述。如果一个进程被终止，其PSS中所使用的共享库大小将会重新按比例分配给剩下的并且仍在使用该共享库的进程</li>
-<li>VSS （Virtual Set Size）:虚拟消耗内存，包含共享库占用的内存。是单个进程全部可访问的地址空间，其大小包括可能还尚未在内存中驻留的部分。比如地址空间已经被 malloc 分配，但是还没有实际写入；对于确定单个进程实际内存使用大小， VSS 用处不大</li>
-<li>RSS（Resident Set Size):实际使用物理内存，包含共享库占用的内存。是单个进程实际占用的内存大小，RSS 易被误导的原因在于， 它包括了该进程所使用的所有共享库的全部内存大小。对于单个共享库，尽管无论多少个进程使用，实际该共享库只会被装入内存一次；因此，对于单个进程的内存使用大小， RSS也不是一个精确的描述</li>
-</ul></div><a href="/2017/01/26/Android性能测试/" class="read-more">...more</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2017/01/24/uiAutomator/" class="post-title-link">uiAutomator</a></h2><div class="post-info">Jan 24, 2017</div><div class="post-content"><h3 id="小感想"><a href="#小感想" class="headerlink" title="小感想"></a>小感想</h3><ul>
+</ol></div><a href="/2017/01/26/Android性能测试/" class="read-more">...more</a></article></li><li class="post-list-item"><article class="post-block"><h2 class="post-title"><a href="/2017/01/24/uiAutomator/" class="post-title-link">uiAutomator</a></h2><div class="post-info">Jan 24, 2017</div><div class="post-content"><h3 id="小感想"><a href="#小感想" class="headerlink" title="小感想"></a>小感想</h3><ul>
 <li>嗨呀，咋说呢。想学点UI自动化测试的脚本，试着琢磨琢磨了UIAutomator。一些积累的小经验在这里做个总结。网上相关的一些小资料都比较过时了，还不清楚这个uiautomator的流行程度，先说这些。</li>
 </ul>
 <h3 id="1-安装-amp-环境准备"><a href="#1-安装-amp-环境准备" class="headerlink" title="1.安装&amp;环境准备"></a>1.安装&amp;环境准备</h3><ul>
