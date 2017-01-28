@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sa6r1na.github.io/"/>
-  <updated>2017-01-27T06:17:04.000Z</updated>
+  <updated>2017-01-28T16:23:12.000Z</updated>
   <id>http://sa6r1na.github.io/</id>
   
   <author>
@@ -14,6 +14,39 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>aapt查看android资源文件</title>
+    <link href="http://sa6r1na.github.io/2017/01/29/aapt%E6%9F%A5%E7%9C%8Bandroid%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6/"/>
+    <id>http://sa6r1na.github.io/2017/01/29/aapt查看android资源文件/</id>
+    <published>2017-01-28T16:14:01.000Z</published>
+    <updated>2017-01-28T16:23:12.000Z</updated>
+    
+    <content type="html"><![CDATA[<h4 id="aapt简介"><a href="#aapt简介" class="headerlink" title="aapt简介"></a>aapt简介</h4><ul>
+<li>android aapt工具即Android Asset Packaging Tool。百度百科的定义：在SDK的build-tools目录下。该工具可以查看，创建， 更新ZIP格式的文档附件(zip, jar, apk)。也可将资源文件编译成二进制文件，尽管你可能没有直接使用过aapt工具，但是build scripts和IDE插件会使用这个工具打包apk文件构成一个Android 应用程序。在使用aapt之前需要在环境变量里面配置SDK-tools路径，或者是路径+aapt的方式进入aapt。</li>
+</ul>
+<a id="more"></a>
+<h4 id="aapt子命令"><a href="#aapt子命令" class="headerlink" title="aapt子命令"></a>aapt子命令</h4><ul>
+<li>aapt l[ist]:列出资源压缩包里的内容。</li>
+<li>aapt d[ump]：查看APK包内指定的内容。</li>
+<li>aapt p[ackage]：打包生成资源压缩包。</li>
+<li>aapt r[emove]：从压缩包中删除指定文件。</li>
+<li>aapt a[dd]：向压缩包中添加指定文件。</li>
+<li>aapt v[ersion]:打印aapt的版本。</li>
+</ul>
+<h4 id="获取apk详细信息（包名、版本等）"><a href="#获取apk详细信息（包名、版本等）" class="headerlink" title="获取apk详细信息（包名、版本等）"></a>获取apk详细信息（包名、版本等）</h4><p><code>aapt dump badging XXX.apk</code></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h4 id=&quot;aapt简介&quot;&gt;&lt;a href=&quot;#aapt简介&quot; class=&quot;headerlink&quot; title=&quot;aapt简介&quot;&gt;&lt;/a&gt;aapt简介&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;android aapt工具即Android Asset Packaging Tool。百度百科的定义：在SDK的build-tools目录下。该工具可以查看，创建， 更新ZIP格式的文档附件(zip, jar, apk)。也可将资源文件编译成二进制文件，尽管你可能没有直接使用过aapt工具，但是build scripts和IDE插件会使用这个工具打包apk文件构成一个Android 应用程序。在使用aapt之前需要在环境变量里面配置SDK-tools路径，或者是路径+aapt的方式进入aapt。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Android性能测试</title>
