@@ -508,33 +508,6 @@ apicontent = response.read()
   </entry>
   
   <entry>
-    <title>monkey 日志分析</title>
-    <link href="http://sa6r1na.github.io/2016/11/12/monkey-%E6%97%A5%E5%BF%97%E5%88%86%E6%9E%90/"/>
-    <id>http://sa6r1na.github.io/2016/11/12/monkey-日志分析/</id>
-    <published>2016-11-12T12:36:01.000Z</published>
-    <updated>2016-11-12T12:40:54.000Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="Monkey日志的保存方法"><a href="#Monkey日志的保存方法" class="headerlink" title="Monkey日志的保存方法"></a>Monkey日志的保存方法</h4><p>1.保存在pc中，代码入下：</p>
-<p> <code>adb shell monkey [option] &lt;count&gt; &gt; d:\monkey.txt</code></p>
-<p>2.保存在手机中:</p>
-<a id="more"></a>
-<p><code>adb shell</code><br><code>monkey [option] &lt;count&gt; &gt; /mnt/sdcard/monkey.txt</code></p>
-<p>3.标注流和错误流分开保存，代码如下：</p>
-<p><code>Monkey [option] &lt;count&gt; 1&gt;/sdcard/monkey.txt 2&gt;/sdcard/error.txt</code></p>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;Monkey日志的保存方法&quot;&gt;&lt;a href=&quot;#Monkey日志的保存方法&quot; class=&quot;headerlink&quot; title=&quot;Monkey日志的保存方法&quot;&gt;&lt;/a&gt;Monkey日志的保存方法&lt;/h4&gt;&lt;p&gt;1.保存在pc中，代码入下：&lt;/p&gt;
-&lt;p&gt; &lt;code&gt;adb shell monkey [option] &amp;lt;count&amp;gt; &amp;gt; d:\monkey.txt&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;2.保存在手机中:&lt;/p&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
     <title>sublime 添加转换json插件</title>
     <link href="http://sa6r1na.github.io/2016/11/11/sublime-%E6%B7%BB%E5%8A%A0%E8%BD%AC%E6%8D%A2json%E6%8F%92%E4%BB%B6/"/>
     <id>http://sa6r1na.github.io/2016/11/11/sublime-添加转换json插件/</id>
@@ -557,52 +530,6 @@ apicontent = response.read()
 &lt;li&gt;安装 pretty json 插件&lt;/li&gt;
 &lt;li&gt;control + alt + J  就OK啦&lt;/li&gt;
 &lt;/ol&gt;
-    
-    </summary>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Monkey 常用adb 辅助命令</title>
-    <link href="http://sa6r1na.github.io/2016/11/08/Monkey-%E5%B8%B8%E7%94%A8adb-%E8%BE%85%E5%8A%A9%E5%91%BD%E4%BB%A4/"/>
-    <id>http://sa6r1na.github.io/2016/11/08/Monkey-常用adb-辅助命令/</id>
-    <published>2016-11-08T14:22:00.000Z</published>
-    <updated>2016-11-08T14:46:18.000Z</updated>
-    
-    <content type="html"><![CDATA[<h4 id="获取logcat日志信息："><a href="#获取logcat日志信息：" class="headerlink" title="获取logcat日志信息："></a>获取logcat日志信息：</h4><ul>
-<li>adb shell logcat -v time &gt; log.txt</li>
-</ul>
-<h4 id="获取内存信息"><a href="#获取内存信息" class="headerlink" title="获取内存信息"></a>获取内存信息</h4><ul>
-<li>adb shell dumpsys meminfo &lt;进程名&gt;</li>
-</ul>
-<a id="more"></a>
-<h4 id="获取CPU消耗信息"><a href="#获取CPU消耗信息" class="headerlink" title="获取CPU消耗信息"></a>获取CPU消耗信息</h4><ul>
-<li>adb shell top -n 1 | find “进程名”</li>
-</ul>
-<h4 id="获取电量信息"><a href="#获取电量信息" class="headerlink" title="获取电量信息"></a>获取电量信息</h4><ul>
-<li>adb shell dumpsys battery</li>
-</ul>
-<h4 id="获取GPU信息"><a href="#获取GPU信息" class="headerlink" title="获取GPU信息"></a>获取GPU信息</h4><ul>
-<li>GPU信息命令：adb shell dumpsys gfxinfo &lt;进程名&gt;</li>
-</ul>
-<h4 id="获取流量信息"><a href="#获取流量信息" class="headerlink" title="获取流量信息"></a>获取流量信息</h4><ul>
-<li>adb shell cat/proc/uid_stat/&lt;被测应用的uid&gt;/tcp_rcv</li>
-</ul>
-<h4 id="获取被测应用的UID"><a href="#获取被测应用的UID" class="headerlink" title="获取被测应用的UID"></a>获取被测应用的UID</h4><ol>
-<li>查看被测应用的进程ID adb shell ps | grep &lt;被测应用的包名&gt;</li>
-<li>查看被测应用的用户ID（UID）adb shell cat /proc/$pid/status</li>
-</ol>
-]]></content>
-    
-    <summary type="html">
-    
-      &lt;h4 id=&quot;获取logcat日志信息：&quot;&gt;&lt;a href=&quot;#获取logcat日志信息：&quot; class=&quot;headerlink&quot; title=&quot;获取logcat日志信息：&quot;&gt;&lt;/a&gt;获取logcat日志信息：&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;adb shell logcat -v time &amp;gt; log.txt&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id=&quot;获取内存信息&quot;&gt;&lt;a href=&quot;#获取内存信息&quot; class=&quot;headerlink&quot; title=&quot;获取内存信息&quot;&gt;&lt;/a&gt;获取内存信息&lt;/h4&gt;&lt;ul&gt;
-&lt;li&gt;adb shell dumpsys meminfo &amp;lt;进程名&amp;gt;&lt;/li&gt;
-&lt;/ul&gt;
     
     </summary>
     
@@ -657,11 +584,11 @@ apicontent = response.read()
   </entry>
   
   <entry>
-    <title>monkey常用命令---参数篇</title>
+    <title>monkey常用命令</title>
     <link href="http://sa6r1na.github.io/2016/11/06/monkey%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://sa6r1na.github.io/2016/11/06/monkey常用命令/</id>
     <published>2016-11-06T12:15:34.000Z</published>
-    <updated>2016-11-06T14:33:27.000Z</updated>
+    <updated>2017-01-28T09:37:38.000Z</updated>
     
     <content type="html"><![CDATA[<h4 id="启动的命令行脚本："><a href="#启动的命令行脚本：" class="headerlink" title="启动的命令行脚本："></a>启动的命令行脚本：</h4><p><code>monkey [option] &lt;count&gt;</code></p>
 <h4 id="options可简单划分为五类："><a href="#options可简单划分为五类：" class="headerlink" title="options可简单划分为五类："></a>options可简单划分为五类：</h4><ul>
@@ -716,6 +643,13 @@ apicontent = response.read()
 </ul>
 </li>
 </ol>
+<h4 id="Monkey日志的保存方法"><a href="#Monkey日志的保存方法" class="headerlink" title="Monkey日志的保存方法"></a>Monkey日志的保存方法</h4><p>1.保存在pc中，代码入下：</p>
+<p> <code>adb shell monkey [option] &lt;count&gt; &gt; d:\monkey.txt</code></p>
+<p>2.保存在手机中:</p>
+<!--more-->
+<p><code>adb shell</code><br><code>monkey [option] &lt;count&gt; &gt; /mnt/sdcard/monkey.txt</code></p>
+<p>3.标注流和错误流分开保存，代码如下：</p>
+<p><code>Monkey [option] &lt;count&gt; 1&gt;/sdcard/monkey.txt 2&gt;/sdcard/error.txt</code></p>
 ]]></content>
     
     <summary type="html">
@@ -739,7 +673,7 @@ apicontent = response.read()
     <link href="http://sa6r1na.github.io/2016/11/04/adb%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/"/>
     <id>http://sa6r1na.github.io/2016/11/04/adb常用命令/</id>
     <published>2016-11-04T15:34:18.000Z</published>
-    <updated>2016-11-14T13:00:07.000Z</updated>
+    <updated>2017-01-28T09:37:28.000Z</updated>
     
     <content type="html"><![CDATA[<h4 id="关闭或者开启服务"><a href="#关闭或者开启服务" class="headerlink" title="关闭或者开启服务"></a>关闭或者开启服务</h4><ul>
 <li>adb kill-server</li>
@@ -785,6 +719,17 @@ apicontent = response.read()
 <li>卸载： adb uninstall test.apk</li>
 <li>覆盖安装： adb install -r test.apk</li>
 </ul>
+<h4 id="获取logcat日志信息："><a href="#获取logcat日志信息：" class="headerlink" title="获取logcat日志信息："></a>获取logcat日志信息：</h4><p><code>adb shell logcat -v time &gt; log.txt</code></p>
+<h4 id="获取内存信息"><a href="#获取内存信息" class="headerlink" title="获取内存信息"></a>获取内存信息</h4><p><code>adb shell dumpsys meminfo &lt;进程名&gt;</code></p>
+<!--more-->
+<h4 id="获取CPU消耗信息"><a href="#获取CPU消耗信息" class="headerlink" title="获取CPU消耗信息"></a>获取CPU消耗信息</h4><p><code>adb shell top -n 1 | find &quot;进程名&quot;</code></p>
+<h4 id="获取电量信息"><a href="#获取电量信息" class="headerlink" title="获取电量信息"></a>获取电量信息</h4><p><code>adb shell dumpsys battery</code></p>
+<h4 id="获取GPU信息"><a href="#获取GPU信息" class="headerlink" title="获取GPU信息"></a>获取GPU信息</h4><p><code>GPU信息命令：adb shell dumpsys gfxinfo &lt;进程名&gt;</code></p>
+<h4 id="获取流量信息"><a href="#获取流量信息" class="headerlink" title="获取流量信息"></a>获取流量信息</h4><p><code>adb shell cat/proc/uid_stat/&lt;被测应用的uid&gt;/tcp_rcv</code></p>
+<h4 id="获取被测应用的UID"><a href="#获取被测应用的UID" class="headerlink" title="获取被测应用的UID"></a>获取被测应用的UID</h4><ol>
+<li>查看被测应用的进程ID<br><code>adb shell ps | grep &lt;被测应用的包名&gt;</code></li>
+<li>查看被测应用的用户ID（UID）<br><code>adb shell cat /proc/$pid/status</code></li>
+</ol>
 ]]></content>
     
     <summary type="html">
