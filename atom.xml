@@ -166,7 +166,7 @@
     <link href="http://sa6r1na.github.io/2017/01/24/uiAutomator/"/>
     <id>http://sa6r1na.github.io/2017/01/24/uiAutomator/</id>
     <published>2017-01-24T10:42:27.000Z</published>
-    <updated>2017-01-26T13:24:28.000Z</updated>
+    <updated>2017-02-06T09:29:08.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="小感想"><a href="#小感想" class="headerlink" title="小感想"></a>小感想</h3><ul>
 <li>嗨呀，咋说呢。想学点UI自动化测试的脚本，试着琢磨琢磨了UIAutomator。一些积累的小经验在这里做个总结。网上相关的一些小资料都比较过时了，还不清楚这个uiautomator的流行程度，先说这些。</li>
@@ -202,10 +202,13 @@
 </ul>
 <p><img src="https://ww1.sinaimg.cn/large/006tNbRwjw1fc1y4lueqmj31ea0x6qkl.jpg" alt=""></p>
 <h3 id="7-将jar文件push到手机data-local-tmp目录"><a href="#7-将jar文件push到手机data-local-tmp目录" class="headerlink" title="7.将jar文件push到手机data/local/tmp目录"></a>7.将jar文件push到手机data/local/tmp目录</h3><ul>
-<li><code>adb push &lt;jar文件路径&gt; data/local/tmp</code></li>
+<li><code>adb push &lt;jar文件路径&gt; /data/local/tmp</code></li>
 <li><code>adb shell uiautomator runtest &lt;jar文件名&gt; -c &lt;工程中的类名（包含包名）&gt;</code></li>
 </ul>
-<p>例：<code>adb shell myUIautomator runtest myUIautomator.jar -c com.sabrina.CheckSize</code><br>手机便会执行脚本了，由于放假在家没有Android机，所以条件够了再检验。</p>
+<p>例：<code>adb shell uiautomator runtest /data/local/tmpmyUIautomator.jar -c com.sabrina.CheckSize</code><br>手机便会执行脚本了，由于放假在家没有Android机，所以条件够了再检验。</p>
+<p>回来上班啦，动手搞了一下，算是能跑，小白入门呀。<br><img src="https://ww2.sinaimg.cn/large/006tNbRwgy1fcgvlc9kcfj30na026749.jpg" alt=""></p>
+<p><img src="https://ww4.sinaimg.cn/large/006tNbRwgy1fcgvn76wnpj317u0260sq.jpg" alt=""></p>
+<p><img src="https://ww2.sinaimg.cn/large/006tNbRwgy1fcgvnjmeglj31d80t6dil.jpg" alt=""></p>
 ]]></content>
     
     <summary type="html">
