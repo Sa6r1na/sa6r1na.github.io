@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://sa6r1na.github.io/"/>
-  <updated>2017-01-28T16:23:12.000Z</updated>
+  <updated>2017-02-09T10:05:33.000Z</updated>
   <id>http://sa6r1na.github.io/</id>
   
   <author>
@@ -14,6 +14,41 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>appium和robotframework框架的UI自动化</title>
+    <link href="http://sa6r1na.github.io/2017/02/09/appium%E5%92%8Crobotframework%E6%A1%86%E6%9E%B6%E7%9A%84UI%E8%87%AA%E5%8A%A8%E5%8C%96/"/>
+    <id>http://sa6r1na.github.io/2017/02/09/appium和robotframework框架的UI自动化/</id>
+    <published>2017-02-09T05:55:38.000Z</published>
+    <updated>2017-02-09T10:05:33.000Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="本篇介绍下在UI自动化中的一些问题"><a href="#本篇介绍下在UI自动化中的一些问题" class="headerlink" title="本篇介绍下在UI自动化中的一些问题"></a>本篇介绍下在UI自动化中的一些问题</h3><ul>
+<li>由于公司推得是appium+robotframework测试框架，所以就把一些经验教训写出来做个积累。</li>
+</ul>
+<h4 id="1-在mac上安装wxpython遇到的问题"><a href="#1-在mac上安装wxpython遇到的问题" class="headerlink" title="1. 在mac上安装wxpython遇到的问题"></a>1. 在mac上安装wxpython遇到的问题</h4><ul>
+<li>刚开始无法安装wxpythton2.8.12.1，而最初了解的Python2.7对应wxpython是2.8.12.1版本。后来，经人协助，可以安装wxpython3.0版本。修改步骤如下：</li>
+</ul>
+<a id="more"></a>
+<ol>
+<li>修改文件<strong>init</strong>.py,路径/usr/local/lib/python2.7/site-packages/robotide/</li>
+<li>如果你的python版本是2.7.要在初始化文件中加上一行版本配置。</li>
+</ol>
+<p><img src="https://ww1.sinaimg.cn/large/006tNc79gy1fckcwb2jgwj30n208gju2.jpg" alt=""><br>如图加上支持3.0</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;本篇介绍下在UI自动化中的一些问题&quot;&gt;&lt;a href=&quot;#本篇介绍下在UI自动化中的一些问题&quot; class=&quot;headerlink&quot; title=&quot;本篇介绍下在UI自动化中的一些问题&quot;&gt;&lt;/a&gt;本篇介绍下在UI自动化中的一些问题&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;由于公司推得是appium+robotframework测试框架，所以就把一些经验教训写出来做个积累。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&quot;1-在mac上安装wxpython遇到的问题&quot;&gt;&lt;a href=&quot;#1-在mac上安装wxpython遇到的问题&quot; class=&quot;headerlink&quot; title=&quot;1. 在mac上安装wxpython遇到的问题&quot;&gt;&lt;/a&gt;1. 在mac上安装wxpython遇到的问题&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;刚开始无法安装wxpythton2.8.12.1，而最初了解的Python2.7对应wxpython是2.8.12.1版本。后来，经人协助，可以安装wxpython3.0版本。修改步骤如下：&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>aapt查看android资源文件</title>
@@ -166,7 +201,7 @@
     <link href="http://sa6r1na.github.io/2017/01/24/uiAutomator/"/>
     <id>http://sa6r1na.github.io/2017/01/24/uiAutomator/</id>
     <published>2017-01-24T10:42:27.000Z</published>
-    <updated>2017-02-06T09:29:08.000Z</updated>
+    <updated>2017-02-06T09:59:06.000Z</updated>
     
     <content type="html"><![CDATA[<h3 id="小感想"><a href="#小感想" class="headerlink" title="小感想"></a>小感想</h3><ul>
 <li>嗨呀，咋说呢。想学点UI自动化测试的脚本，试着琢磨琢磨了UIAutomator。一些积累的小经验在这里做个总结。网上相关的一些小资料都比较过时了，还不清楚这个uiautomator的流行程度，先说这些。</li>
