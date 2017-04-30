@@ -1,0 +1,23 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> mac下利用dex2jar和jd-gui来反编译apk包 · Sa6r1na's Blog</title><meta name="description" content="mac下利用dex2jar和jd-gui来反编译apk包 - Sa6r1na"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://sa6r1na.github.io/atom.xml" title="Sa6r1na's Blog"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="http://weibo.com/u/2950763237" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/Sa6r1na" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">mac下利用dex2jar和jd-gui来反编译apk包</h1><div class="post-info">Apr 30, 2017</div><div class="post-content"><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ul>
+<li>下载dex2jar的mac版本</li>
+<li>下载jd-gui的mac版本</li>
+</ul>
+<p>资源都比较好找就不给出来了</p>
+<a id="more"></a>
+<h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><h4 id="1-dex2jar下载并解压"><a href="#1-dex2jar下载并解压" class="headerlink" title="1.dex2jar下载并解压"></a>1.dex2jar下载并解压</h4><ul>
+<li>解压后看到有个d2j-dex2jar.sh文件，先用chmod 777将文件变成可执行的</li>
+</ul>
+<h4 id="2-将apk文件解压"><a href="#2-将apk文件解压" class="headerlink" title="2.将apk文件解压"></a>2.将apk文件解压</h4><ul>
+<li>解压后看到有个classes.dex文件，将此文件放到dex2jar解压后文件目录下<br><img src="http://ww2.sinaimg.cn/large/006tNc79gy1ff4u6odtgkj30ro074dgd.jpg" alt=""></li>
+</ul>
+<h4 id="3-将下载后的jd-gui解压"><a href="#3-将下载后的jd-gui解压" class="headerlink" title="3.将下载后的jd-gui解压"></a>3.将下载后的jd-gui解压</h4><ul>
+<li>解压后看到.app文件打开<br><img src="http://ww3.sinaimg.cn/large/006tNc79gy1ff4u89wgvtj30my068aa3.jpg" alt=""></li>
+</ul>
+<h4 id="4-执行反编译脚本"><a href="#4-执行反编译脚本" class="headerlink" title="4.执行反编译脚本"></a>4.执行反编译脚本</h4><ul>
+<li>回到dex2jar解压后的目录下，执行<br><code>sh d2j-dex2jar.sh classes2.dex</code><br><img src="http://ww4.sinaimg.cn/large/006tNc79gy1ff4uak1c39j31900iw40t.jpg" alt=""></li>
+</ul>
+<h4 id="5-用jd-gui打开生成的jar文件"><a href="#5-用jd-gui打开生成的jar文件" class="headerlink" title="5.用jd-gui打开生成的jar文件"></a>5.用jd-gui打开生成的jar文件</h4><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1ff4ublvcb2j30m00j4t96.jpg" alt=""></p>
+<ul>
+<li>就能看到里面的代码</li>
+</ul>
+</div></article></div></section><footer><div class="paginator"><a href="/2017/02/09/appium和robotframework框架的UI自动化/" class="next">下一篇</a></div><div class="copyright"><p>© 2016 - 2017 <a href="http://sa6r1na.github.io">Sa6r1na</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.6.1/MathJax.js?config=TeX-MML-AM_CHTML"></script><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-87493635-1",'auto');ga('send','pageview');</script></body></html>
