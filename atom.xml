@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>sa6r1na</title>
+  
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2019-02-19T03:56:42.570Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>lingbei</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>fish简介</title>
+    <link href="http://yoursite.com/2019/02/19/fish%E7%AE%80%E4%BB%8B/"/>
+    <id>http://yoursite.com/2019/02/19/fish简介/</id>
+    <published>2019-02-19T03:25:37.000Z</published>
+    <updated>2019-02-19T03:56:42.570Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ul><li><p>shell有好几种，目前最常用的是bash和zsh,但是他们都不如fish shell 好用。</p></li><li><p>如果你想拥有一个方便好用的 Shell，又不想学习一大堆语法，或者花费很多时间配置，那么你一定要尝试一下 Fish。</p></li><li><p>mac自带的shell 是bash shell</p></li></ul><a id="more"></a><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ul><li><p>命令安装<br><code>brew isntall fish</code></p></li><li><p>安装好后提示将fish的目录加入到/etc/shells文件中</p></li><li>加好之后按照提示，将fish作为默认的shell（这步按照个人需要，我对于fish的不兼容没那么介意，所以就可以用做默认的shell）</li></ul><h2 id="fish安装"><a href="#fish安装" class="headerlink" title="fish安装"></a>fish安装</h2><ol><li>自动匹配历史命令</li><li>彩色展示，蓝色是有效的命令。</li><li>自动建议，光标后灰色给出可能的选项。</li></ol><h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><ul><li>fish是单独的语法，和bash语法不是很兼容，部分需要bash编程的用不惯。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;shell有好几种，目前最常用的是bash和zsh,但是他们都不如fish shell 好用。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;如果你想拥有一个方便好用的 Shell，又不想学习一大堆语法，或者花费很多时间配置，那么你一定要尝试一下 Fish。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;mac自带的shell 是bash shell&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>重拾hexo</title>
+    <link href="http://yoursite.com/2018/12/14/%E9%87%8D%E6%8B%BEhexo/"/>
+    <id>http://yoursite.com/2018/12/14/重拾hexo/</id>
+    <published>2018-12-14T07:05:53.000Z</published>
+    <updated>2019-02-19T06:13:21.907Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="hexo是什么"><a href="#hexo是什么" class="headerlink" title="hexo是什么"></a>hexo是什么</h2><ul><li>方便的搭建自己博客平台的工具</li><li>能自动关联GitHub</li><li>能本地预览、快速部署</li></ul><h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><ul><li>下载node.js并安装（官网下载安装），默认会安装npm。</li><li>下载安装git（官网下载安装）</li><li>下载安装hexo。方法：命令行 运行npm install -g hexo（要翻墙）</li></ul><a id="more"></a><h2 id="本地搭建hexo静态博客"><a href="#本地搭建hexo静态博客" class="headerlink" title="本地搭建hexo静态博客"></a>本地搭建hexo静态博客</h2><ul><li>新建一个文件夹，如MyBlog</li><li>进入该文件夹内，右击运行git，输入：hexo init（生成hexo模板，可能要翻墙）</li><li>最后运行：hexo server （运行程序，访问本地localhost:4000可以看到博客已经搭建成功）</li></ul><h2 id="将博客与Github关联"><a href="#将博客与Github关联" class="headerlink" title="将博客与Github关联"></a>将博客与Github关联</h2><ul><li><p>在Github上创建名字为XXX.github.io的项目，XXX为自己的github用户名。</p></li><li><p>打开本地的MyBlog文件夹项目内的_config.yml配置文件，将其中的type设置为git(看图冒号后面有空格，我之前就被坑了)</p></li></ul><p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fy6ax52ublj314s078gn7.jpg" alt></p><ul><li>运行：npm install hexo-deployer-git –save</li><li>运行：hexo g（本地生成静态文件）</li><li>运行：hexo d（将本地静态文件推送至Github）</li></ul><p>然后打开浏览器，直接访问 <a href="https://sa6r1na.github.io/" target="_blank" rel="noopener">https://sa6r1na.github.io/</a> 就可以。</p><h2 id="写第一篇文章"><a href="#写第一篇文章" class="headerlink" title="写第一篇文章"></a>写第一篇文章</h2><ul><li>在MyBlog目录下执行：hexo new “我的第一篇文章”，会在source-&gt;_posts文件夹内生成一个.md文件。</li><li><p>编辑该文件（遵循Markdown规则）</p><ul><li>修改起始字段：</li><li>title 文章的标题</li><li>date 创建日期 （文件的创建日期 ）</li><li>updated 修改日期 （ 文件的修改日期）</li><li>comments 是否开启评论 true</li><li>tags 标签</li><li>categories 分类</li><li>permalink url中的名字（文件名）</li></ul></li><li><p>编写正文内容（MakeDown）</p><ul><li>hexo clean 删除本地静态文件（Public目录），可不执行。</li><li>hexo g 生成本地静态文件（Public目录）</li><li>hexo deploy 将本地静态文件推送至github（hexo d）</li></ul></li></ul><h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><ul><li>默认的主题比较丑，像我这种外貌协会一定会找个自己喜欢的主题的。方式可以通过GitHub上搜“hexo theme”,可以先看下预览图，找到自己喜欢的。</li><li>按照github上的介绍，修改_config.yml配置文件</li></ul><p><img src="https://ws3.sinaimg.cn/large/006tNbRwly1fy6b3p2psqj30hg05a74m.jpg" alt></p><ul><li>预览下我的博客</li></ul><p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fy6bfxt7npj31ee0psadb.jpg" alt></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul><li>以上，赶紧体验下hexo来写自己的博客</li><li>其他的可以看下面这篇博客，有其他的详细介绍 <a href="https://thief.one/2017/03/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" target="_blank" rel="noopener">Hexo搭建博客教程</a></li></ul><h2 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h2><ul><li>电脑重装了之后博客都没有了，之前备份到github在重新下下来。注意此时主题文件是没有备份的，要重新下载。 </li><li>当前我用的主题是 <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank" rel="noopener">apollo</a></li><li>blog目录下运行:</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive</span><br><span class="line">git clone https://github.com/pinggod/hexo-theme-apollo.git themes/apollo</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;hexo是什么&quot;&gt;&lt;a href=&quot;#hexo是什么&quot; class=&quot;headerlink&quot; title=&quot;hexo是什么&quot;&gt;&lt;/a&gt;hexo是什么&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;方便的搭建自己博客平台的工具&lt;/li&gt;
+&lt;li&gt;能自动关联GitHub&lt;/li&gt;
+&lt;li&gt;能本地预览、快速部署&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;环境准备&quot;&gt;&lt;a href=&quot;#环境准备&quot; class=&quot;headerlink&quot; title=&quot;环境准备&quot;&gt;&lt;/a&gt;环境准备&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;下载node.js并安装（官网下载安装），默认会安装npm。&lt;/li&gt;
+&lt;li&gt;下载安装git（官网下载安装）&lt;/li&gt;
+&lt;li&gt;下载安装hexo。方法：命令行 运行npm install -g hexo（要翻墙）&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>浅谈测试思想理论</title>
+    <link href="http://yoursite.com/2018/12/11/%E6%B5%85%E8%B0%88%E6%B5%8B%E8%AF%95%E6%80%9D%E6%83%B3%E7%90%86%E8%AE%BA/"/>
+    <id>http://yoursite.com/2018/12/11/浅谈测试思想理论/</id>
+    <published>2018-12-11T07:05:53.000Z</published>
+    <updated>2019-02-19T03:55:32.116Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="写在前面的话"><a href="#写在前面的话" class="headerlink" title="写在前面的话"></a>写在前面的话</h2><h3 id="个人介绍"><a href="#个人介绍" class="headerlink" title="个人介绍"></a>个人介绍</h3><ul><li>本人工作3年，本科毕业，从一个小白到软件测试行业摸爬滚打已经给3年啦，不算优秀，但也算有收获。这几年自己的经验和大家分享下，总结下自己，也给新人一点点经验。</li></ul><h3 id="本篇介绍"><a href="#本篇介绍" class="headerlink" title="本篇介绍"></a>本篇介绍</h3><ul><li>主要根据自己的工作经验，总结了测试在一个项目中应该要做的事情。</li></ul><a id="more"></a><h2 id="需求阶段测试能做什么"><a href="#需求阶段测试能做什么" class="headerlink" title="需求阶段测试能做什么"></a>需求阶段测试能做什么</h2><ul><li>一些公司是测试在开发提测后才介入测试的，不建议这种方式，测试后期投入对于整个项目是不利的（因为可能遇到之前需求点不够细致，导致方案被推翻的情况）。当然至少我没有这种经历，如果公司的大环境适合这种方式我也没有意见。</li></ul><h3 id="需求分析"><a href="#需求分析" class="headerlink" title="需求分析"></a>需求分析</h3><ol><li>【先要知道需求的背景】：搞清楚为什么要做这个需求，需求对业务的价值，这也有利于提高你的眼光。</li><li>【需求合理性评估】：<1>从业务角度review需求的合理性：要知道产品的需求和现有的业务场景是否吻合，产品是否考虑周全，是否有没考虑到的业务场景导致需求不合理、不完善；<2>从技术的角度review需求的合理性：凭借自己的经验，从技术角度分析，产品的需求是否可行，开发可能采取什么样的技术方案，产品对于技术方案有没有要求或者倾向。</2></1></li><li>【从测试角度分析需求边界】：字段过短多长、最大最小值的展示，无网络、服务异常的提示文案；这些都是测试阶段会考虑的东西，提早让产品补充，减少后期沟通成本</li><li>【埋点】：提醒产品加埋点，新功能如果产品没有加埋点要提醒产品加，方便上线后的数据收集。</li></ol><h2 id="技术评审阶段测试能做什么"><a href="#技术评审阶段测试能做什么" class="headerlink" title="技术评审阶段测试能做什么"></a>技术评审阶段测试能做什么</h2><h3 id="技术评审"><a href="#技术评审" class="headerlink" title="技术评审"></a>技术评审</h3><ul><li>会前要熟悉清楚需求，并把技术方案的相关文档先看一下。</li><li>首先要仔细听开发的技术方案，听懂开发的实现方式。并review是否能达到产品的需求。review技术方案的合理性。是否考虑周全。结合自己的测试经验，提出问题，看开发技术层面是否考虑到。</li><li>会后要结合产品需求，分析每一步的技术方案是怎么实现的，如果不清楚的需求点和技术方案及时和产品、开发问清楚。</li></ul><h2 id="提测前准备阶段"><a href="#提测前准备阶段" class="headerlink" title="提测前准备阶段"></a>提测前准备阶段</h2><h3 id="测试计划制定"><a href="#测试计划制定" class="headerlink" title="测试计划制定"></a>测试计划制定</h3><ul><li>当需求和技术方案确定后，要给出测试计划。<ul><li>具体的测试排期</li><li>投入人力的确定</li><li>测试任务分工</li><li>最重要的发布时间同步，是产品、开发侧最关心的</li></ul></li></ul><h3 id="测试分析"><a href="#测试分析" class="headerlink" title="测试分析"></a>测试分析</h3><ul><li>针对产品的需求和技术方案，分析出测试功能点和测试范围，可以用xmind脑图格式列一下。测试分析要全面，细致到具体的点，不要有遗漏。</li><li>自己梳理好测分，可以找同组成员内部review下。防止测分有疏漏。</li></ul><h3 id="用例设计"><a href="#用例设计" class="headerlink" title="用例设计"></a>用例设计</h3><ul><li>针对分析出的测试点，进行详细的用例设计。利用等价类划分等思路将功能点排列组合串起来，串成用例。</li><li>用例覆盖点要全面，标题要简明扼要，步骤要清晰，写清楚每个步骤的预期结果。尤其是指派给开发的测试用例以及要其他人执行的用例一定要避免含糊不清的字样，避免歧义。</li><li>一份好的用例从目录层级结构就知道你的设计思路，知道你的覆盖点是否完全。</li><li>用例要及时更新</li></ul><h2 id="测试阶段"><a href="#测试阶段" class="headerlink" title="测试阶段"></a>测试阶段</h2><h3 id="冒烟测试"><a href="#冒烟测试" class="headerlink" title="冒烟测试"></a>冒烟测试</h3><ul><li>用最快的速度跑通整个主流程，重要问题提早暴露，避免影响后续的测试。</li></ul><h3 id="一轮测试"><a href="#一轮测试" class="headerlink" title="一轮测试"></a>一轮测试</h3><ul><li>按照排期安排，按照用例来执行，遇到问题提bug。不同公司有自己的报bug的平台（详细见下文报bug的要求）。</li><li>及时关注进度是否落后于排期，遇到严重的bug要开发迅速解决。</li></ul><h3 id="二轮测试"><a href="#二轮测试" class="headerlink" title="二轮测试"></a>二轮测试</h3><ul><li>再开发修复一轮bug后，再按照case执行一遍，这个过程一般最好通过交叉测试来进行。避免重复执行同一个模块遇到瓶颈，思维麻木。</li></ul><h3 id="回归测试"><a href="#回归测试" class="headerlink" title="回归测试"></a>回归测试</h3><ul><li>【新功能回归】一般是合并master后进行，将本版本新功能主流程回归一遍，避免上线后遇到严重问题</li><li>【老功能回归】未改动部分功能回归，避免影响老功能的主流程。</li></ul><h2 id="bug要求"><a href="#bug要求" class="headerlink" title="bug要求"></a>bug要求</h2><ul><li>报bug没那么容易，要是觉得报bug是很简单的事那就大错特错了。</li></ul><h3 id="什么是bug"><a href="#什么是bug" class="headerlink" title="什么是bug"></a>什么是bug</h3><ul><li>这个问题说简单也简单，说复杂也复杂；我们普遍认为和需求不一致的就算是bug（当然需求细节点很多情况会变、会细化）</li><li>所以报bug的一个重要的前提就是：要!和!产品!确认!。</li></ul><h3 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h3><ul><li>简明扼要，不提供干扰信息。<ul><li>尽可能的协助开发定位问题所在。不要小瞧报bug，有经验的人能尽可能提供更多必要的信息给开发，不产生干扰因素，协助开发定位问题。</li><li>举例：不是新安装才会有的问题标题就不要带“新安装”字样；最好写清楚，当前是什么样，应该是什么样。</li></ul></li></ul><h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ul><li>按照1、2、3。。。依次标明bug的复现步骤。而且自己要复现，按照自己写的复现步骤能复现bug，避免写的bug步骤有误。</li><li>提供必要的截图，以及视频，能更高效的帮你说明问题。</li><li>不要觉得你写的文字多浪费时间，你要是描述不清楚开发找你复现，才真是浪费时间。只要你写清楚，就可以和开发硬气的说“我写的很清楚啊，按照这个步骤就能复现。。。”</li><li>也为后续一些问题的追踪留下记录。</li></ul><h3 id="bug类型"><a href="#bug类型" class="headerlink" title="bug类型"></a>bug类型</h3><ul><li>是兼容问题还是UI问题还是功能问题，类型要选正确；<ul><li>尤其是兼容问题要备注具体哪个手机、哪个系统、哪个型号会出现。要求测试验证是否其他的手机型号就不会出现。</li></ul></li></ul><p>综上，报一个bug之前要经过反复的确认和验证才能报，并不是分分钟搞定那么简单的。</p><h2 id="bug追溯"><a href="#bug追溯" class="headerlink" title="bug追溯"></a>bug追溯</h2><ul><li>报完bug当然不是放置不管了，要控制开发改bug的节奏。让版本的质量处于自己的控制内。</li><li>一般采用给开发截止时间的方式来约束开发修复后的时间，还要留一些自己的验证的时间，一般是一轮结束前所有功能性的bug都要修复完毕验证通过</li></ul><h2 id="发布阶段"><a href="#发布阶段" class="headerlink" title="发布阶段"></a>发布阶段</h2><ul><li>走到这一阶段，恭喜项目终于要接近尾声了。</li><li>服务端的项目要发布后做好线上验证。客户端的项目可以给产品体验包去验收。让产品看下效果，有产品体验的问题要及时修复。</li><li>如果产品验收没问题了，测试要通知市场准备发布。iOS要提交审核（测试可以帮忙review是否有可能导致审核不过的因素，我们公司提交审核居然是QA来做的），Android要发布市场。</li><li>发布市场后做好线上验证，便于更早发现问题。</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;写在前面的话&quot;&gt;&lt;a href=&quot;#写在前面的话&quot; class=&quot;headerlink&quot; title=&quot;写在前面的话&quot;&gt;&lt;/a&gt;写在前面的话&lt;/h2&gt;&lt;h3 id=&quot;个人介绍&quot;&gt;&lt;a href=&quot;#个人介绍&quot; class=&quot;headerlink&quot; title=&quot;个人介绍&quot;&gt;&lt;/a&gt;个人介绍&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;本人工作3年，本科毕业，从一个小白到软件测试行业摸爬滚打已经给3年啦，不算优秀，但也算有收获。这几年自己的经验和大家分享下，总结下自己，也给新人一点点经验。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;本篇介绍&quot;&gt;&lt;a href=&quot;#本篇介绍&quot; class=&quot;headerlink&quot; title=&quot;本篇介绍&quot;&gt;&lt;/a&gt;本篇介绍&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;主要根据自己的工作经验，总结了测试在一个项目中应该要做的事情。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>UIautomator入门</title>
+    <link href="http://yoursite.com/2018/12/11/UIautomator%E5%85%A5%E9%97%A8/"/>
+    <id>http://yoursite.com/2018/12/11/UIautomator入门/</id>
+    <published>2018-12-11T05:34:01.000Z</published>
+    <updated>2019-02-19T03:55:32.116Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="小感想"><a href="#小感想" class="headerlink" title="小感想"></a>小感想</h2><ul><li>想学点UI自动化测试的脚本，试着琢磨琢磨了UIAutomator。网上相关的一些小资料都比较过时了，一些积累的小经验在这里做个总结。还不清楚这个uiautomator的流行程度，以及有没有必要深入研究，有这方面的大神可以交流下，指点迷津。</li></ul><h3 id="1-安装-amp-环境准备"><a href="#1-安装-amp-环境准备" class="headerlink" title="1.安装&amp;环境准备"></a>1.安装&amp;环境准备</h3><ul><li>jdk环境</li><li>ant工具（mac用户brew install 没有问题；完事试一下ant -version）</li><li>Android-sdk 必备</li><li>idea (目前比较流行的IDE，但是相关的uiautomator介绍真是少啊）</li></ul><a id="more"></a><h3 id="2-建立测试工程"><a href="#2-建立测试工程" class="headerlink" title="2.建立测试工程"></a>2.建立测试工程</h3><ul><li><p>用idea新建个java工程，选择command line app类型。<br><img src="https://ww1.sinaimg.cn/large/006y8lVajw1fc1xaocqb8j31kw0z3jw1.jpg" alt></p></li><li><p>添加junit.jar 和 android.jar uiAutomator.jar:<br>模块里面junit可以通过添加maven的依赖方式添加；另外两个直接添加就可以，目录在Android sdk目录下。/usr/local/Cellar/android-sdk/24.4.1_1/platforms/android-25/ 具体目录取决于你配置的Android-sdk的api目录。<br><img src="https://ww1.sinaimg.cn/large/006y8lVajw1fc1xdmh1j5j31kw1780y7.jpg" alt></p></li></ul><p><img src="https://ww4.sinaimg.cn/large/006y8lVajw1fc1xic5txpj31280s243s.jpg" alt></p><ul><li>在测试工程src目录下新建package，命名随意。然后代码写上<br><img src="https://ww3.sinaimg.cn/large/006y8lVajw1fc1xkrue3xj31kw0usamt.jpg" alt></li></ul><h3 id="3-查看Android版本sdk的ID值"><a href="#3-查看Android版本sdk的ID值" class="headerlink" title="3.查看Android版本sdk的ID值"></a>3.查看Android版本sdk的ID值</h3><ul><li>在\Android-sdk\tools\目录下，输入android list.找到项目配置的android api 例如：我的api是25 id是3.<br><img src="https://ww3.sinaimg.cn/large/006tNbRwjw1fc1ybz3q0mj31ea0x67hg.jpg" alt></li></ul><h3 id="4-生成build-xml文件"><a href="#4-生成build-xml文件" class="headerlink" title="4.生成build.xml文件"></a>4.生成build.xml文件</h3><p>仍然当前目录（Android-sdk\tools\）运行命令 android create uitest-project -n name -t android-sdk-ID -p project_path<br>例如： <code>android create uitest-project -n myUIautomator -t 3 -p /Users/sabrina/Documents/repository/myUIautomator</code></p><p>name 是生成jar包的名字可以自己定义；-t android-sdk的id刚才通过命令android list 查看到的；-p后面加路径，项目的路径。运行命令后，将会在工程的根目录下生成build.xml文件。</p><h3 id="5-ant配置build-xml文件"><a href="#5-ant配置build-xml文件" class="headerlink" title="5.ant配置build.xml文件"></a>5.ant配置build.xml文件</h3><ul><li>刚开始被这个坑了好久，xml文件里面ant.properties位置是红色的，确一直没有找到原因，猜测一定是ant没有配置什么。百度了下idea配置ant。如下图，点击ant build.把刚才的build.xml文件添加上去。点击运行能成功运行证明添加没有什么问题。</li></ul><p><img src="https://ww3.sinaimg.cn/large/006tNbRwjw1fc1y026evtj30ko15mdie.jpg" alt></p><h3 id="6-ant-build生成"><a href="#6-ant-build生成" class="headerlink" title="6.ant build生成"></a>6.ant build生成</h3><ul><li>进入工程目录，执行ant build。不出意外会提示成功，会在工程的bin目录下生成jar文件。</li></ul><p><img src="https://ww1.sinaimg.cn/large/006tNbRwjw1fc1y4lueqmj31ea0x6qkl.jpg" alt></p><h3 id="7-将jar文件push到手机data-local-tmp目录"><a href="#7-将jar文件push到手机data-local-tmp目录" class="headerlink" title="7.将jar文件push到手机data/local/tmp目录"></a>7.将jar文件push到手机data/local/tmp目录</h3><ul><li><code>adb push &lt;jar文件路径&gt; /data/local/tmp</code></li><li><code>adb shell uiautomator runtest &lt;jar文件名&gt; -c &lt;工程中的类名（包含包名）&gt;</code></li></ul><p>例：<code>adb shell uiautomator runtest /data/local/tmpmyUIautomator.jar -c com.sabrina.CheckSize</code> </p><p>手机便会执行脚本了，算是能跑，小白入门啦。<br><img src="https://ww2.sinaimg.cn/large/006tNbRwgy1fcgvlc9kcfj30na026749.jpg" alt></p><p><img src="https://ww4.sinaimg.cn/large/006tNbRwgy1fcgvn76wnpj317u0260sq.jpg" alt></p><p><img src="https://ww2.sinaimg.cn/large/006tNbRwgy1fcgvnjmeglj31d80t6dil.jpg" alt></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;小感想&quot;&gt;&lt;a href=&quot;#小感想&quot; class=&quot;headerlink&quot; title=&quot;小感想&quot;&gt;&lt;/a&gt;小感想&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;想学点UI自动化测试的脚本，试着琢磨琢磨了UIAutomator。网上相关的一些小资料都比较过时了，一些积累的小经验在这里做个总结。还不清楚这个uiautomator的流行程度，以及有没有必要深入研究，有这方面的大神可以交流下，指点迷津。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&quot;1-安装-amp-环境准备&quot;&gt;&lt;a href=&quot;#1-安装-amp-环境准备&quot; class=&quot;headerlink&quot; title=&quot;1.安装&amp;amp;环境准备&quot;&gt;&lt;/a&gt;1.安装&amp;amp;环境准备&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;jdk环境&lt;/li&gt;
+&lt;li&gt;ant工具（mac用户brew install 没有问题；完事试一下ant -version）&lt;/li&gt;
+&lt;li&gt;Android-sdk 必备&lt;/li&gt;
+&lt;li&gt;idea (目前比较流行的IDE，但是相关的uiautomator介绍真是少啊）&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
