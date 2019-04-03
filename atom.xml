@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-19T08:17:16.599Z</updated>
+  <updated>2019-04-03T05:14:10.227Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,11 +17,60 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Feed4Junit</title>
+    <link href="http://yoursite.com/2019/04/03/Feed4Junit/"/>
+    <id>http://yoursite.com/2019/04/03/Feed4Junit/</id>
+    <published>2019-04-03T04:55:28.000Z</published>
+    <updated>2019-04-03T05:14:10.227Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ul><li>是数据与代码分离的一个单测框架</li><li>在Junit测试框架上进行了扩展</li><li>支持csv和Excel文件数据源头，甚至支持直接连接数据库</li></ul><h2 id="idea引用"><a href="#idea引用" class="headerlink" title="idea引用"></a>idea引用</h2><ul><li>maven工程增加依赖</li></ul><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- https:<span class="comment">//mvnrepository.com/artifact/org.databene/feed4junit --&gt;</span></span><br><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.databene&lt;/groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;feed4junit&lt;/artifactId&gt;</span><br><span class="line">    &lt;version&gt;1.1.5&lt;/version&gt;</span><br><span class="line">&lt;/dependency&gt;</span><br></pre></td></tr></table></figure><ul><li>引包 import org.databene.feed4junit.Feeder;</li></ul><h2 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h2><ul><li><a href="https://www.ibm.com/developerworks/cn/java/j-lo-feed4junit/index.html" target="_blank" rel="noopener">使用 Feed4JUnit 进行数据与代码分离的 Java 单元测试</a></li></ul><h2 id="采坑"><a href="#采坑" class="headerlink" title="采坑"></a>采坑</h2><ol><li>数据文件一定要放到工程根目录下，不是src目录。否则引不到。</li><li>运行单个case带有@Test标签的报错：</li></ol><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">java.lang.Exception: <span class="function">No tests found matching Method <span class="title">testAccessCheck_CSV</span><span class="params">(sample.test.Feed4JfromFile)</span> from org.junit.internal.requests.ClassRequest@2aa5fe93</span></span><br><span class="line"><span class="function"></span></span><br><span class="line"><span class="function">at org.junit.internal.requests.FilterRequest.<span class="title">getRunner</span><span class="params">(FilterRequest.java:<span class="number">37</span>)</span></span></span><br><span class="line"><span class="function">at com.intellij.junit4.JUnit4IdeaTestRunner.<span class="title">startRunnerWithArgs</span><span class="params">(JUnit4IdeaTestRunner.java:<span class="number">49</span>)</span></span></span><br><span class="line"><span class="function">at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.<span class="title">startRunnerWithArgs</span><span class="params">(IdeaTestRunner.java:<span class="number">47</span>)</span></span></span><br><span class="line"><span class="function">at com.intellij.rt.execution.junit.JUnitStarter.<span class="title">prepareStreamsAndStart</span><span class="params">(JUnitStarter.java:<span class="number">242</span>)</span></span></span><br><span class="line"><span class="function">at com.intellij.rt.execution.junit.JUnitStarter.<span class="title">main</span><span class="params">(JUnitStarter.java:<span class="number">70</span>)</span></span></span><br></pre></td></tr></table></figure><p>没有找到合适的解决办法，网上查了下直接运行整个Test类就不会报错，试了下确实是这样。</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;简介&quot;&gt;&lt;a href=&quot;#简介&quot; class=&quot;headerlink&quot; title=&quot;简介&quot;&gt;&lt;/a&gt;简介&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;是数据与代码分离的一个单测框架&lt;/li&gt;
+&lt;li&gt;在Junit测试框架上进行了扩展&lt;/li&gt;
+&lt;li&gt;支持csv和Excel文件
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>android工程环境配置</title>
+    <link href="http://yoursite.com/2019/02/22/android%E5%B7%A5%E7%A8%8B%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/"/>
+    <id>http://yoursite.com/2019/02/22/android工程环境配置/</id>
+    <published>2019-02-22T11:27:51.000Z</published>
+    <updated>2019-02-27T04:32:50.646Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="环境需求"><a href="#环境需求" class="headerlink" title="环境需求"></a>环境需求</h2><ul><li>Java</li><li>Android-SDK</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;环境需求&quot;&gt;&lt;a href=&quot;#环境需求&quot; class=&quot;headerlink&quot; title=&quot;环境需求&quot;&gt;&lt;/a&gt;环境需求&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Java&lt;/li&gt;
+&lt;li&gt;Android-SDK&lt;/li&gt;
+&lt;/ul&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
     <title>fish简介</title>
     <link href="http://yoursite.com/2019/02/19/fish%E7%AE%80%E4%BB%8B/"/>
     <id>http://yoursite.com/2019/02/19/fish简介/</id>
     <published>2019-02-19T03:25:37.000Z</published>
-    <updated>2019-02-19T08:17:16.599Z</updated>
+    <updated>2019-02-19T08:17:39.290Z</updated>
     
     <content type="html"><![CDATA[<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><ul><li><p>shell有好几种，目前最常用的是bash和zsh,但是他们都不如fish shell 好用。</p></li><li><p>如果你想拥有一个方便好用的 Shell，又不想学习一大堆语法，或者花费很多时间配置，那么你一定要尝试一下 Fish。</p></li></ul><a id="more"></a><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><ul><li><p>命令安装<br><code>brew install fish</code></p></li><li><p>安装好后提示将fish的目录加入到/etc/shells文件中</p></li><li>加好之后按照提示，将fish作为默认的shell（这步按照个人需要，我对于fish的不兼容没那么介意，所以就可以用做默认的shell）</li></ul><h2 id="fish安装"><a href="#fish安装" class="headerlink" title="fish安装"></a>fish安装</h2><ol><li>自动匹配历史命令</li><li>彩色展示，蓝色是有效的命令。</li><li>自动建议，光标后灰色给出可能的选项。</li></ol><h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2><ul><li>fish是单独的语法，和bash语法不是很兼容，部分需要bash编程的用不惯。</li></ul>]]></content>
     
@@ -44,7 +93,7 @@
     <link href="http://yoursite.com/2018/12/14/%E9%87%8D%E6%8B%BEhexo/"/>
     <id>http://yoursite.com/2018/12/14/重拾hexo/</id>
     <published>2018-12-14T07:05:53.000Z</published>
-    <updated>2019-02-19T06:13:21.907Z</updated>
+    <updated>2019-02-19T08:17:42.265Z</updated>
     
     <content type="html"><![CDATA[<h2 id="hexo是什么"><a href="#hexo是什么" class="headerlink" title="hexo是什么"></a>hexo是什么</h2><ul><li>方便的搭建自己博客平台的工具</li><li>能自动关联GitHub</li><li>能本地预览、快速部署</li></ul><h2 id="环境准备"><a href="#环境准备" class="headerlink" title="环境准备"></a>环境准备</h2><ul><li>下载node.js并安装（官网下载安装），默认会安装npm。</li><li>下载安装git（官网下载安装）</li><li>下载安装hexo。方法：命令行 运行npm install -g hexo（要翻墙）</li></ul><a id="more"></a><h2 id="本地搭建hexo静态博客"><a href="#本地搭建hexo静态博客" class="headerlink" title="本地搭建hexo静态博客"></a>本地搭建hexo静态博客</h2><ul><li>新建一个文件夹，如MyBlog</li><li>进入该文件夹内，右击运行git，输入：hexo init（生成hexo模板，可能要翻墙）</li><li>最后运行：hexo server （运行程序，访问本地localhost:4000可以看到博客已经搭建成功）</li></ul><h2 id="将博客与Github关联"><a href="#将博客与Github关联" class="headerlink" title="将博客与Github关联"></a>将博客与Github关联</h2><ul><li><p>在Github上创建名字为XXX.github.io的项目，XXX为自己的github用户名。</p></li><li><p>打开本地的MyBlog文件夹项目内的_config.yml配置文件，将其中的type设置为git(看图冒号后面有空格，我之前就被坑了)</p></li></ul><p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fy6ax52ublj314s078gn7.jpg" alt></p><ul><li>运行：npm install hexo-deployer-git –save</li><li>运行：hexo g（本地生成静态文件）</li><li>运行：hexo d（将本地静态文件推送至Github）</li></ul><p>然后打开浏览器，直接访问 <a href="https://sa6r1na.github.io/" target="_blank" rel="noopener">https://sa6r1na.github.io/</a> 就可以。</p><h2 id="写第一篇文章"><a href="#写第一篇文章" class="headerlink" title="写第一篇文章"></a>写第一篇文章</h2><ul><li>在MyBlog目录下执行：hexo new “我的第一篇文章”，会在source-&gt;_posts文件夹内生成一个.md文件。</li><li><p>编辑该文件（遵循Markdown规则）</p><ul><li>修改起始字段：</li><li>title 文章的标题</li><li>date 创建日期 （文件的创建日期 ）</li><li>updated 修改日期 （ 文件的修改日期）</li><li>comments 是否开启评论 true</li><li>tags 标签</li><li>categories 分类</li><li>permalink url中的名字（文件名）</li></ul></li><li><p>编写正文内容（MakeDown）</p><ul><li>hexo clean 删除本地静态文件（Public目录），可不执行。</li><li>hexo g 生成本地静态文件（Public目录）</li><li>hexo deploy 将本地静态文件推送至github（hexo d）</li></ul></li></ul><h2 id="主题"><a href="#主题" class="headerlink" title="主题"></a>主题</h2><ul><li>默认的主题比较丑，像我这种外貌协会一定会找个自己喜欢的主题的。方式可以通过GitHub上搜“hexo theme”,可以先看下预览图，找到自己喜欢的。</li><li>按照github上的介绍，修改_config.yml配置文件</li></ul><p><img src="https://ws3.sinaimg.cn/large/006tNbRwly1fy6b3p2psqj30hg05a74m.jpg" alt></p><ul><li>预览下我的博客</li></ul><p><img src="https://ws1.sinaimg.cn/large/006tNbRwly1fy6bfxt7npj31ee0psadb.jpg" alt></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><ul><li>以上，赶紧体验下hexo来写自己的博客</li><li>其他的可以看下面这篇博客，有其他的详细介绍 <a href="https://thief.one/2017/03/03/Hexo%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/" target="_blank" rel="noopener">Hexo搭建博客教程</a></li></ul><h2 id="后续"><a href="#后续" class="headerlink" title="后续"></a>后续</h2><ul><li>电脑重装了之后博客都没有了，之前备份到github在重新下下来。注意此时主题文件是没有备份的，要重新下载。 </li><li>当前我用的主题是 <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank" rel="noopener">apollo</a></li><li>blog目录下运行:</li></ul><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">npm install --save hexo-renderer-jade hexo-generator-feed hexo-generator-sitemap hexo-browsersync hexo-generator-archive</span><br><span class="line">git clone https://github.com/pinggod/hexo-theme-apollo.git themes/apollo</span><br></pre></td></tr></table></figure>]]></content>
     
