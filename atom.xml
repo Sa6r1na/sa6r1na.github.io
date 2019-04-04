@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-04-04T03:45:22.302Z</updated>
+  <updated>2019-04-04T03:47:25.631Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>使用dex2jar和jd-gui实现反编译apk</title>
+    <link href="http://yoursite.com/2019/04/04/%E4%BD%BF%E7%94%A8dex2jar%E5%92%8Cjd-gui%E5%AE%9E%E7%8E%B0%E5%8F%8D%E7%BC%96%E8%AF%91apk/"/>
+    <id>http://yoursite.com/2019/04/04/使用dex2jar和jd-gui实现反编译apk/</id>
+    <published>2019-04-04T03:46:47.000Z</published>
+    <updated>2019-04-04T03:47:25.631Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><ul><li>下载dex2jar(Mac版本和Windows版本都有）</li><li>下载jd-gui(Mac版本和Windows版本都有）</li></ul><p>资源都比较好找就不给出来了</p><a id="more"></a><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><h4 id="1-dex2jar下载并解压"><a href="#1-dex2jar下载并解压" class="headerlink" title="1.dex2jar下载并解压"></a>1.dex2jar下载并解压</h4><ul><li>解压后看到有个d2j-dex2jar.sh文件，先用chmod 777将文件变成可执行的</li></ul><h4 id="2-将apk文件解压"><a href="#2-将apk文件解压" class="headerlink" title="2.将apk文件解压"></a>2.将apk文件解压</h4><ul><li>解压后看到有个classes.dex文件，将此文件放到dex2jar解压后文件目录下<br><img src="http://ww2.sinaimg.cn/large/006tNc79gy1ff4u6odtgkj30ro074dgd.jpg" alt></li></ul><h4 id="3-将下载后的jd-gui解压"><a href="#3-将下载后的jd-gui解压" class="headerlink" title="3.将下载后的jd-gui解压"></a>3.将下载后的jd-gui解压</h4><ul><li>解压后看到.app文件打开<br><img src="http://ww3.sinaimg.cn/large/006tNc79gy1ff4u89wgvtj30my068aa3.jpg" alt></li></ul><h4 id="4-执行反编译脚本"><a href="#4-执行反编译脚本" class="headerlink" title="4.执行反编译脚本"></a>4.执行反编译脚本</h4><ul><li>回到dex2jar解压后的目录下，执行<br><code>sh d2j-dex2jar.sh classes2.dex</code><br><img src="http://ww4.sinaimg.cn/large/006tNc79gy1ff4uak1c39j31900iw40t.jpg" alt></li></ul><h4 id="5-用jd-gui打开生成的jar文件"><a href="#5-用jd-gui打开生成的jar文件" class="headerlink" title="5.用jd-gui打开生成的jar文件"></a>5.用jd-gui打开生成的jar文件</h4><p><img src="http://ww4.sinaimg.cn/large/006tNc79gy1ff4ublvcb2j30m00j4t96.jpg" alt></p><ul><li>就能看到里面的代码</li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;安装&quot;&gt;&lt;a href=&quot;#安装&quot; class=&quot;headerlink&quot; title=&quot;安装&quot;&gt;&lt;/a&gt;安装&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;下载dex2jar(Mac版本和Windows版本都有）&lt;/li&gt;
+&lt;li&gt;下载jd-gui(Mac版本和Windows版本都有）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;资源都比较好找就不给出来了&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>Espresso入门</title>
