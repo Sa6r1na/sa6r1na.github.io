@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><head><meta name="generator" content="Hexo 3.8.0"><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Android SDK相关命令 · sa6r1na</title><meta name="description" content="Android SDK相关命令 - lingbei"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="search" type="application/opensearchdescription+xml" href="http://yoursite.com/atom.xml" title="sa6r1na"></head><body><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png" alt="logo"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="https://weibo.com/u/2950763237/home?wvr=5" target="_blank" class="nav-list-link">WEIBO</a></li><li class="nav-list-item"><a href="https://github.com/Sa6r1na" target="_blank" class="nav-list-link">GITHUB</a></li><li class="nav-list-item"><a href="/atom.xml" target="_self" class="nav-list-link">RSS</a></li></ul></header><main class="container"><div class="post"><article class="post-block"><h1 class="post-title">Android SDK相关命令</h1><div class="post-info">Apr 4, 2019</div><div class="post-content"><h3 id="aapt"><a href="#aapt" class="headerlink" title="aapt"></a>aapt</h3><ul>
+<li>可以理解为编译安卓资源文件的，多了不说百度都有。是Android sdk自带的一款工具。</li>
+</ul>
+<h3 id="简单使用"><a href="#简单使用" class="headerlink" title="简单使用"></a>简单使用</h3><h4 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h4><ol>
+<li>前提要安装Android-sdk，运行aapt</li>
+</ol>
+<p><img src="https://s1.wacdn.com/wis/93/3acf851dfe78af29_1180x398.png" alt="alt text"></p>
+<a id="more"></a>
+<ol start="2">
+<li>运行图中命令 android update sdk –no-ui –filter ‘build-tool-23.0.1’（然而我执行失败了）不过失败了没有关系，运行Android sdk manager,安装图中的tools</li>
+</ol>
+<p><img src="https://s1.wacdn.com/wis/93/ed3c4b7d27f65028_1330x504.png" alt="alt text"></p>
+<ol start="3">
+<li>成功</li>
+</ol>
+<p><img src="https://s1.wacdn.com/wis/93/f0a86ef71a501b50_1810x1194.png" alt="alt text"></p>
+<h3 id="简单命令"><a href="#简单命令" class="headerlink" title="简单命令"></a>简单命令</h3><ol>
+<li>aapt dump badging XXX.apk 查看apk的包名等信息<br><img src="https://s1.wacdn.com/wis/93/c6d74b608aca270b_1772x658.png" alt="alt text"></li>
+</ol>
+<p><img src="https://s1.wacdn.com/wis/93/4166e9a4feb05b6e_1760x1134.png" alt="alt text"></p>
+<ol start="2">
+<li>aapt dump configurations XXX.apk 查看apk一些配置<br><img src="https://s1.wacdn.com/wis/93/79d1c51f5891d602_1774x662.png" alt="alt text"></li>
+</ol>
+<p>其他的可以看下<a href="http://blog.csdn.net/g19920917/article/details/20244937" target="_blank" rel="noopener">这篇博客</a>，网上相关资源也很多，大家可以按照需求学习。</p>
+<h3 id="校验签名"><a href="#校验签名" class="headerlink" title="校验签名"></a>校验签名</h3><ul>
+<li>jarsigner -verify -verbose -certs apk包路径 校验签名</li>
+</ul>
+</div></article></div></main><footer><div class="paginator"><a href="/2019/04/04/Charles抓https包/" class="next">NEXT</a></div><div class="copyright"><p>© 2015 - 2019 <a href="http://yoursite.com">lingbei</a>, powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/pinggod/hexo-theme-apollo" target="_blank">hexo-theme-apollo</a>.</p></div></footer></div><script async src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-crwIf/BuaWM9rM65iM+dWFldgQ1Un8jWZMuh3puxb8TOY9+linwLoI7ZHZT+aekW" crossorigin="anonymous"></script></body></html>
