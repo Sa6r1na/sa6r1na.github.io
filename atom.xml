@@ -207,4 +207,26 @@
     
   </entry>
   
+  <entry>
+    <title>基于moco的mock server简单应用</title>
+    <link href="http://yoursite.com/2018/04/04/%E5%9F%BA%E4%BA%8Emoco%E7%9A%84mock-server%E7%AE%80%E5%8D%95%E5%BA%94%E7%94%A8/"/>
+    <id>http://yoursite.com/2018/04/04/基于moco的mock-server简单应用/</id>
+    <published>2018-04-04T05:41:25.000Z</published>
+    <updated>2019-04-04T05:42:39.261Z</updated>
+    
+    <content type="html"><![CDATA[<p><strong>提起mock大家应该就知道是干嘛用的了，再次再介绍一种简单的方式，基于moco的mock server。步骤很简单：</strong></p><p><strong>1.</strong> 首先，要 <a href="/uploads/files/1482402665143-moco-runner-0.10.2-standalone.jar">下载个moco的jar</a>  到桌面</p><p><strong>2.</strong> 在桌面建一个json文件，例如： </p><pre><code>[{ &quot;request&quot; : { &quot;uri&quot; : &quot;/hello&quot; }, &quot;response&quot; : { &quot;text&quot; : &quot;Hello  World !!&quot;  } ]</code></pre><p>清晰易懂，把你的请求和结果返回写上。</p><a id="more"></a><p><strong>3.</strong> 在桌面的路径执行命令（cmd和mac终端都可以,以管理员模式运行）：</p><pre><code>java -jar moco-runner-0.10.2-standalone.jar start -p 5638 -c data.json</code></pre><p><strong>注意</strong>：执行命令的时候要在这个jar的文件目录下，尽量json文件和jar文件放到一起；<br>-p 表示端口号  可以自定义 -c 后面加json文件名</p><p><strong>4.</strong> 如图就启动成功了<br><img src="http://s1.wacdn.com/wis/53/515d4c2949c3f6be_646x204.png" alt="alt text"></p><p><strong>5.</strong> 在浏览器访问 <a href="http://localhost:5638/hello" target="_blank" rel="noopener">http://localhost:5638/hello</a>  就能得到结果<br><img src="http://s1.wacdn.com/wis/53/2e6e2b2012c995a8_361x125.png" alt="alt text"></p><p>是不是很简单！</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;strong&gt;提起mock大家应该就知道是干嘛用的了，再次再介绍一种简单的方式，基于moco的mock server。步骤很简单：&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;1.&lt;/strong&gt; 首先，要 &lt;a href=&quot;/uploads/files/1482402665143-moco-runner-0.10.2-standalone.jar&quot;&gt;下载个moco的jar&lt;/a&gt;  到桌面&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;2.&lt;/strong&gt; 在桌面建一个json文件，例如： &lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[{ &amp;quot;request&amp;quot; : { &amp;quot;uri&amp;quot; : &amp;quot;/hello&amp;quot; }, &amp;quot;response&amp;quot; : { &amp;quot;text&amp;quot; : &amp;quot;Hello  World !!&amp;quot;  } ]
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;清晰易懂，把你的请求和结果返回写上。&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
 </feed>
